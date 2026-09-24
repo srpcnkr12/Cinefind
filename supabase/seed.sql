@@ -1,0 +1,7 @@
+-- Bu proje SQL tabanlı seed kullanmıyor: film kataloğu ve başlangıç koleksiyonları
+-- `tmdb-sync` edge function'ı (fixture modunda) tarafından kurulur — bkz.
+-- supabase/functions/tmdb-sync ve supabase/seed/films.fixture.json.
+--
+-- `supabase db reset` sonrası:
+--   supabase functions serve
+--   curl -X POST http://127.0.0.1:55321/functions/v1/tmdb-sync --header 'apikey: <secret key>'

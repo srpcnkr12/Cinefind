@@ -1,0 +1,30 @@
+{
+  "name": "@reelmate/config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./brand": "./src/brand.ts",
+    "./app-config": "./src/app-config.ts",
+    "./eslint": "./eslint/index.js",
+    "./tsconfig/base.json": "./tsconfig/base.json",
+    "./tsconfig/react.json": "./tsconfig/react.json"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@eslint/js": "10.0.1",
+    "typescript-eslint": "8.70.0",
+    "eslint-plugin-i18next": "6.1.5",
+    "eslint-config-prettier": "10.1.8"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3",
+    "eslint": "10.10.0"
+  }
+}

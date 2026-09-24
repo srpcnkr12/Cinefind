@@ -1,0 +1,10 @@
+# Staged dosyalarda biçimlendirme.
+pnpm exec lint-staged
+
+# ESLint kökten değil, paket bazında çalıştırılır: apps/* kendi config'lerini
+# (Expo/Next preset'leri ve `@/*` alias çözücüsü) yalnızca kendi dizinlerinde
+# doğru uygular. Kökten çalıştırmak yüzlerce yanlış pozitif üretiyordu.
+pnpm lint
+
+# supabase/ bir turbo paketi değil; kök config'le ayrıca lintlenir.
+pnpm lint:scripts

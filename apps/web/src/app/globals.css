@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* Elle tetiklenen (class tabanlı) koyu tema — bkz. apps/web/src/components/theme-toggle.tsx */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* Yalnızca yüzey renkleri temaya göre değişir (bkz. PRD 15.2). Bu değerler
+     packages/tokens/src/raw.cjs ile elle senkron tutulur — CSS, JS/TS modülü
+     import edemez. */
+  --color-surface-1: #ffffff;
+  --color-surface-2: #e8edf5;
+}
+
+.dark {
+  --color-surface-1: #252f52;
+  --color-surface-2: #313c63;
+}
+
+@theme {
+  --color-ink: #1b2440;
+  --color-screen: #f4f7fb;
+  --color-reel: #17736e;
+  --color-ticket: #f2547d;
+  --color-popcorn: #ffc23d;
+  --color-celluloid: #6e7689;
+  --color-danger: #c4433b;
+  --color-success: #1b6e49;
+
+  --radius-poster: 6px;
+  --radius-card: 16px;
+  --radius-sheet: 24px;
+  --radius-button: 12px;
+}
+
+@theme inline {
+  --color-surface-1: var(--color-surface-1);
+  --color-surface-2: var(--color-surface-2);
+  --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}

@@ -1,0 +1,15 @@
+node_modules
+.turbo
+.next
+.expo
+dist
+build
+coverage
+pnpm-lock.yaml
+
+# Kullanıcının orijinal prompt dosyası — değiştirilmez.
+film-tanisma-uygulamasi-claude-code-prompt.md
+
+# Expo tarafından üretilen varlık dosyaları.
+apps/mobile/assets/**
+apps/mobile/expo-env.d.ts

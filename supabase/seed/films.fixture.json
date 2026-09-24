@@ -1,0 +1,1946 @@
+{
+  "genres": [
+    {
+      "id": 28,
+      "name_en": "Action",
+      "name_tr": "Aksiyon"
+    },
+    {
+      "id": 12,
+      "name_en": "Adventure",
+      "name_tr": "Macera"
+    },
+    {
+      "id": 16,
+      "name_en": "Animation",
+      "name_tr": "Animasyon"
+    },
+    {
+      "id": 35,
+      "name_en": "Comedy",
+      "name_tr": "Komedi"
+    },
+    {
+      "id": 80,
+      "name_en": "Crime",
+      "name_tr": "Suç"
+    },
+    {
+      "id": 99,
+      "name_en": "Documentary",
+      "name_tr": "Belgesel"
+    },
+    {
+      "id": 18,
+      "name_en": "Drama",
+      "name_tr": "Drama"
+    },
+    {
+      "id": 10751,
+      "name_en": "Family",
+      "name_tr": "Aile"
+    },
+    {
+      "id": 14,
+      "name_en": "Fantasy",
+      "name_tr": "Fantastik"
+    },
+    {
+      "id": 36,
+      "name_en": "History",
+      "name_tr": "Tarih"
+    },
+    {
+      "id": 27,
+      "name_en": "Horror",
+      "name_tr": "Korku"
+    },
+    {
+      "id": 10402,
+      "name_en": "Music",
+      "name_tr": "Müzik"
+    },
+    {
+      "id": 9648,
+      "name_en": "Mystery",
+      "name_tr": "Gizem"
+    },
+    {
+      "id": 10749,
+      "name_en": "Romance",
+      "name_tr": "Romantik"
+    },
+    {
+      "id": 878,
+      "name_en": "Science Fiction",
+      "name_tr": "Bilim Kurgu"
+    },
+    {
+      "id": 10770,
+      "name_en": "TV Movie",
+      "name_tr": "TV Filmi"
+    },
+    {
+      "id": 53,
+      "name_en": "Thriller",
+      "name_tr": "Gerilim"
+    },
+    {
+      "id": 10752,
+      "name_en": "War",
+      "name_tr": "Savaş"
+    },
+    {
+      "id": 37,
+      "name_en": "Western",
+      "name_tr": "Vahşi Batı"
+    }
+  ],
+  "films": [
+    {
+      "id": -1,
+      "title": "In the Mood for Love",
+      "original_title": "花樣年華",
+      "original_language": "zh",
+      "release_date": "2000-09-29",
+      "runtime": 98,
+      "countries": ["HK"],
+      "adult": false,
+      "popularity": 181.3,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18, 10749],
+      "translations": {
+        "en": {
+          "title": "In the Mood for Love",
+          "tagline": "",
+          "overview": "Two neighbors form a close bond after discovering their spouses are having an affair."
+        },
+        "tr": {
+          "title": "Aşk Zamanı",
+          "tagline": "",
+          "overview": "İki komşu, eşlerinin birbiriyle aldattığını fark ettikten sonra yakınlaşır."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -101,
+            "name": "Wong Kar-wai",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -102,
+            "name": "Tony Leung Chiu-wai",
+            "character": "Chow Mo-wan",
+            "order": 0
+          },
+          {
+            "tmdb_id": -103,
+            "name": "Maggie Cheung",
+            "character": "Su Li-zhen",
+            "order": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": -2,
+      "title": "The Motherland Scoundrel",
+      "original_title": "Yılanların Öcü",
+      "original_language": "tr",
+      "release_date": "1962-01-01",
+      "runtime": 110,
+      "countries": ["TR"],
+      "adult": false,
+      "popularity": 177.6,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18],
+      "translations": {
+        "en": {
+          "title": "The Motherland Scoundrel",
+          "tagline": "",
+          "overview": "A rural family's struggle over land and honor in an Anatolian village."
+        },
+        "tr": {
+          "title": "Yılanların Öcü",
+          "tagline": "",
+          "overview": "Anadolu'da bir köyde toprak ve namus üzerine kurulu bir aile draması."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -104,
+            "name": "Metin Erksan",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -3,
+      "title": "Dry Summer",
+      "original_title": "Susuz Yaz",
+      "original_language": "tr",
+      "release_date": "1964-01-01",
+      "runtime": 90,
+      "countries": ["TR"],
+      "adult": false,
+      "popularity": 173.9,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18],
+      "translations": {
+        "en": {
+          "title": "Dry Summer",
+          "tagline": "",
+          "overview": "A water dispute between brothers escalates into betrayal in an Anatolian village."
+        },
+        "tr": {
+          "title": "Susuz Yaz",
+          "tagline": "",
+          "overview": "Bir Anadolu köyünde su anlaşmazlığı, kardeşler arasında ihanete dönüşür."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -104,
+            "name": "Metin Erksan",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -4,
+      "title": "Distant",
+      "original_title": "Uzak",
+      "original_language": "tr",
+      "release_date": "2002-05-17",
+      "runtime": 110,
+      "countries": ["TR"],
+      "adult": false,
+      "popularity": 170.2,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18],
+      "translations": {
+        "en": {
+          "title": "Distant",
+          "tagline": "",
+          "overview": "A photographer's quiet life is disrupted when a jobless cousin moves in."
+        },
+        "tr": {
+          "title": "Uzak",
+          "tagline": "",
+          "overview": "Bir fotoğrafçının sakin hayatı, işsiz kuzeninin eve taşınmasıyla değişir."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -105,
+            "name": "Nuri Bilge Ceylan",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -5,
+      "title": "Winter Sleep",
+      "original_title": "Kış Uykusu",
+      "original_language": "tr",
+      "release_date": "2014-05-16",
+      "runtime": 196,
+      "countries": ["TR"],
+      "adult": false,
+      "popularity": 166.5,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18],
+      "translations": {
+        "en": {
+          "title": "Winter Sleep",
+          "tagline": "",
+          "overview": "A former actor running a small hotel in Anatolia confronts his own life during a harsh winter."
+        },
+        "tr": {
+          "title": "Kış Uykusu",
+          "tagline": "",
+          "overview": "Anadolu'da küçük bir otel işleten eski bir oyuncu, sert bir kışta kendi hayatıyla yüzleşir."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -105,
+            "name": "Nuri Bilge Ceylan",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -6,
+      "title": "Once Upon a Time in Anatolia",
+      "original_title": "Bir Zamanlar Anadolu'da",
+      "original_language": "tr",
+      "release_date": "2011-05-16",
+      "runtime": 157,
+      "countries": ["TR"],
+      "adult": false,
+      "popularity": 162.8,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [80, 18],
+      "translations": {
+        "en": {
+          "title": "Once Upon a Time in Anatolia",
+          "tagline": "",
+          "overview": "A group of men search the Anatolian steppe overnight for a buried body."
+        },
+        "tr": {
+          "title": "Bir Zamanlar Anadolu'da",
+          "tagline": "",
+          "overview": "Bir grup adam, gece boyunca Anadolu bozkırında gömülü bir cesedi arar."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -105,
+            "name": "Nuri Bilge Ceylan",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -7,
+      "title": "Ayla: The Daughter of War",
+      "original_title": "Ayla",
+      "original_language": "tr",
+      "release_date": "2017-12-15",
+      "runtime": 125,
+      "countries": ["TR", "KR"],
+      "adult": false,
+      "popularity": 159.1,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18, 10752],
+      "translations": {
+        "en": {
+          "title": "Ayla: The Daughter of War",
+          "tagline": "",
+          "overview": "A Turkish sergeant in the Korean War rescues an orphaned girl and forms a lasting bond."
+        },
+        "tr": {
+          "title": "Ayla",
+          "tagline": "",
+          "overview": "Kore Savaşı'nda bir Türk çavuş, öksüz kalan bir kızı kurtarır ve onunla derin bir bağ kurar."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -106,
+            "name": "Can Ülkay",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -8,
+      "title": "Casablanca",
+      "original_title": "Casablanca",
+      "original_language": "en",
+      "release_date": "1942-11-26",
+      "runtime": 102,
+      "countries": ["US"],
+      "adult": false,
+      "popularity": 155.4,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18, 10749, 10752],
+      "translations": {
+        "en": {
+          "title": "Casablanca",
+          "tagline": "",
+          "overview": "In wartime Casablanca, a nightclub owner must choose between love and duty."
+        },
+        "tr": {
+          "title": "Kazablanka",
+          "tagline": "",
+          "overview": "Savaş dönemi Kazablanka'sında bir gece kulübü sahibi, aşk ile görev arasında seçim yapmak zorunda kalır."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -107,
+            "name": "Michael Curtiz",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -108,
+            "name": "Humphrey Bogart",
+            "character": "Rick Blaine",
+            "order": 0
+          },
+          {
+            "tmdb_id": -109,
+            "name": "Ingrid Bergman",
+            "character": "Ilsa Lund",
+            "order": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": -9,
+      "title": "Citizen Kane",
+      "original_title": "Citizen Kane",
+      "original_language": "en",
+      "release_date": "1941-05-01",
+      "runtime": 119,
+      "countries": ["US"],
+      "adult": false,
+      "popularity": 151.7,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18, 9648],
+      "translations": {
+        "en": {
+          "title": "Citizen Kane",
+          "tagline": "",
+          "overview": "Journalists investigate the mysterious last word of a powerful newspaper tycoon."
+        },
+        "tr": {
+          "title": "Yurttaş Kane",
+          "tagline": "",
+          "overview": "Gazeteciler, güçlü bir gazete patronunun gizemli son sözünün ardındaki anlamı araştırır."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -110,
+            "name": "Orson Welles",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -110,
+            "name": "Orson Welles",
+            "character": "Charles Foster Kane",
+            "order": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": -10,
+      "title": "Seven Samurai",
+      "original_title": "七人の侍",
+      "original_language": "ja",
+      "release_date": "1954-04-26",
+      "runtime": 207,
+      "countries": ["JP"],
+      "adult": false,
+      "popularity": 148,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [28, 18, 12],
+      "translations": {
+        "en": {
+          "title": "Seven Samurai",
+          "tagline": "",
+          "overview": "A farming village hires seven ronin to defend itself against bandits."
+        },
+        "tr": {
+          "title": "Yedi Samuray",
+          "tagline": "",
+          "overview": "Bir çiftçi köyü, kendini eşkıyalara karşı savunmak için yedi ronin kiralar."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -111,
+            "name": "Akira Kurosawa",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -112,
+            "name": "Toshiro Mifune",
+            "character": "Kikuchiyo",
+            "order": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": -11,
+      "title": "Tokyo Story",
+      "original_title": "東京物語",
+      "original_language": "ja",
+      "release_date": "1953-11-03",
+      "runtime": 136,
+      "countries": ["JP"],
+      "adult": false,
+      "popularity": 144.3,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18],
+      "translations": {
+        "en": {
+          "title": "Tokyo Story",
+          "tagline": "",
+          "overview": "An elderly couple visits their grown children in Tokyo, who are too busy for them."
+        },
+        "tr": {
+          "title": "Tokyo Hikayesi",
+          "tagline": "",
+          "overview": "Yaşlı bir çift, kendilerine vakit ayıramayan yetişkin çocuklarını Tokyo'da ziyaret eder."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -113,
+            "name": "Yasujirō Ozu",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -12,
+      "title": "8½",
+      "original_title": "Otto e mezzo",
+      "original_language": "it",
+      "release_date": "1963-02-14",
+      "runtime": 138,
+      "countries": ["IT"],
+      "adult": false,
+      "popularity": 140.6,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18],
+      "translations": {
+        "en": {
+          "title": "8½",
+          "tagline": "",
+          "overview": "A film director struggles with creative block while making his next picture."
+        },
+        "tr": {
+          "title": "8½",
+          "tagline": "",
+          "overview": "Bir film yönetmeni, yeni filmini çekerken yaratıcı bir tıkanıklıkla boğuşur."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -114,
+            "name": "Federico Fellini",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -115,
+            "name": "Marcello Mastroianni",
+            "character": "Guido Anselmi",
+            "order": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": -13,
+      "title": "Bicycle Thieves",
+      "original_title": "Ladri di biciclette",
+      "original_language": "it",
+      "release_date": "1948-11-24",
+      "runtime": 89,
+      "countries": ["IT"],
+      "adult": false,
+      "popularity": 136.9,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18],
+      "translations": {
+        "en": {
+          "title": "Bicycle Thieves",
+          "tagline": "",
+          "overview": "A poor father and his son search postwar Rome for his stolen bicycle, needed for work."
+        },
+        "tr": {
+          "title": "Bisiklet Hırsızları",
+          "tagline": "",
+          "overview": "Yoksul bir baba ve oğlu, işi için gerekli olan çalınmış bisikleti savaş sonrası Roma'da arar."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -116,
+            "name": "Vittorio De Sica",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -14,
+      "title": "The 400 Blows",
+      "original_title": "Les Quatre Cents Coups",
+      "original_language": "fr",
+      "release_date": "1959-06-03",
+      "runtime": 99,
+      "countries": ["FR"],
+      "adult": false,
+      "popularity": 133.2,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18],
+      "translations": {
+        "en": {
+          "title": "The 400 Blows",
+          "tagline": "",
+          "overview": "A misunderstood Parisian boy drifts toward petty crime and institutional life."
+        },
+        "tr": {
+          "title": "400 Darbe",
+          "tagline": "",
+          "overview": "Anlaşılamayan bir Parisli çocuk, küçük suçlara ve kurumsal bir hayata sürüklenir."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -117,
+            "name": "François Truffaut",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -15,
+      "title": "Breathless",
+      "original_title": "À bout de souffle",
+      "original_language": "fr",
+      "release_date": "1960-03-16",
+      "runtime": 90,
+      "countries": ["FR"],
+      "adult": false,
+      "popularity": 129.5,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [80, 18],
+      "translations": {
+        "en": {
+          "title": "Breathless",
+          "tagline": "",
+          "overview": "A small-time car thief and his American girlfriend evade the Paris police."
+        },
+        "tr": {
+          "title": "Serseri Aşıklar",
+          "tagline": "",
+          "overview": "Küçük çaplı bir araba hırsızı ve Amerikalı sevgilisi, Paris polisinden kaçar."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -118,
+            "name": "Jean-Luc Godard",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -16,
+      "title": "Metropolis",
+      "original_title": "Metropolis",
+      "original_language": "de",
+      "release_date": "1927-01-10",
+      "runtime": 153,
+      "countries": ["DE"],
+      "adult": false,
+      "popularity": 125.8,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [878, 18],
+      "translations": {
+        "en": {
+          "title": "Metropolis",
+          "tagline": "",
+          "overview": "In a divided futuristic city, a wealthy man's son falls for a worker leading a rebellion."
+        },
+        "tr": {
+          "title": "Metropolis",
+          "tagline": "",
+          "overview": "İkiye bölünmüş fütüristik bir şehirde, zengin bir adamın oğlu isyanı yöneten bir işçiye aşık olur."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -119,
+            "name": "Fritz Lang",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -17,
+      "title": "The Godfather",
+      "original_title": "The Godfather",
+      "original_language": "en",
+      "release_date": "1972-03-24",
+      "runtime": 175,
+      "countries": ["US"],
+      "adult": false,
+      "popularity": 122.1,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [80, 18],
+      "translations": {
+        "en": {
+          "title": "The Godfather",
+          "tagline": "",
+          "overview": "The aging patriarch of a crime family transfers control to his reluctant son."
+        },
+        "tr": {
+          "title": "Baba",
+          "tagline": "",
+          "overview": "Yaşlanan bir suç ailesinin patriği, yönetimi isteksiz oğluna devreder."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -120,
+            "name": "Francis Ford Coppola",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -121,
+            "name": "Marlon Brando",
+            "character": "Vito Corleone",
+            "order": 0
+          },
+          {
+            "tmdb_id": -122,
+            "name": "Al Pacino",
+            "character": "Michael Corleone",
+            "order": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": -18,
+      "title": "Pulp Fiction",
+      "original_title": "Pulp Fiction",
+      "original_language": "en",
+      "release_date": "1994-10-14",
+      "runtime": 154,
+      "countries": ["US"],
+      "adult": false,
+      "popularity": 118.4,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [80, 53],
+      "translations": {
+        "en": {
+          "title": "Pulp Fiction",
+          "tagline": "",
+          "overview": "The lives of two hitmen, a boxer, and a gangster's wife intertwine in Los Angeles."
+        },
+        "tr": {
+          "title": "Ucuz Roman",
+          "tagline": "",
+          "overview": "İki tetikçi, bir boksör ve bir gangsterin eşinin hayatları Los Angeles'ta kesişir."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -123,
+            "name": "Quentin Tarantino",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -124,
+            "name": "John Travolta",
+            "character": "Vincent Vega",
+            "order": 0
+          },
+          {
+            "tmdb_id": -125,
+            "name": "Uma Thurman",
+            "character": "Mia Wallace",
+            "order": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": -19,
+      "title": "Parasite",
+      "original_title": "기생충",
+      "original_language": "ko",
+      "release_date": "2019-05-30",
+      "runtime": 132,
+      "countries": ["KR"],
+      "adult": false,
+      "popularity": 114.7,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [35, 53, 18],
+      "translations": {
+        "en": {
+          "title": "Parasite",
+          "tagline": "",
+          "overview": "A poor family schemes to become employed by a wealthy household."
+        },
+        "tr": {
+          "title": "Parazit",
+          "tagline": "",
+          "overview": "Yoksul bir aile, zengin bir hanede iş bulmak için bir plan kurar."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -126,
+            "name": "Bong Joon-ho",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -127,
+            "name": "Song Kang-ho",
+            "character": "Kim Ki-taek",
+            "order": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": -20,
+      "title": "Oldboy",
+      "original_title": "올드보이",
+      "original_language": "ko",
+      "release_date": "2003-11-21",
+      "runtime": 120,
+      "countries": ["KR"],
+      "adult": false,
+      "popularity": 111,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [28, 18, 9648],
+      "translations": {
+        "en": {
+          "title": "Oldboy",
+          "tagline": "",
+          "overview": "A man seeks revenge after being mysteriously imprisoned for fifteen years."
+        },
+        "tr": {
+          "title": "Oldboy",
+          "tagline": "",
+          "overview": "Bir adam, gizemli bir şekilde on beş yıl hapsedildikten sonra intikam peşine düşer."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -128,
+            "name": "Park Chan-wook",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -129,
+            "name": "Choi Min-sik",
+            "character": "Oh Dae-su",
+            "order": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": -21,
+      "title": "Spirited Away",
+      "original_title": "千と千尋の神隠し",
+      "original_language": "ja",
+      "release_date": "2001-07-20",
+      "runtime": 125,
+      "countries": ["JP"],
+      "adult": false,
+      "popularity": 107.3,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [16, 14, 12],
+      "translations": {
+        "en": {
+          "title": "Spirited Away",
+          "tagline": "",
+          "overview": "A young girl must work in a spirit world bathhouse to save her parents."
+        },
+        "tr": {
+          "title": "Ruhların Kaçışı",
+          "tagline": "",
+          "overview": "Genç bir kız, ailesini kurtarmak için bir ruhlar dünyasındaki hamamda çalışmak zorunda kalır."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -130,
+            "name": "Hayao Miyazaki",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -22,
+      "title": "My Neighbor Totoro",
+      "original_title": "となりのトトロ",
+      "original_language": "ja",
+      "release_date": "1988-04-16",
+      "runtime": 86,
+      "countries": ["JP"],
+      "adult": false,
+      "popularity": 103.6,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [16, 14, 10751],
+      "translations": {
+        "en": {
+          "title": "My Neighbor Totoro",
+          "tagline": "",
+          "overview": "Two young sisters befriend friendly forest spirits near their new countryside home."
+        },
+        "tr": {
+          "title": "Komşum Totoro",
+          "tagline": "",
+          "overview": "İki küçük kız kardeş, yeni kırsal evlerinin yakınındaki dost orman ruhlarıyla arkadaş olur."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -130,
+            "name": "Hayao Miyazaki",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -23,
+      "title": "City Lights",
+      "original_title": "City Lights",
+      "original_language": "en",
+      "release_date": "1931-01-30",
+      "runtime": 87,
+      "countries": ["US"],
+      "adult": false,
+      "popularity": 99.9,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [35, 18, 10749],
+      "translations": {
+        "en": {
+          "title": "City Lights",
+          "tagline": "",
+          "overview": "A tramp falls in love with a blind flower girl and befriends an eccentric millionaire."
+        },
+        "tr": {
+          "title": "Şehir Işıkları",
+          "tagline": "",
+          "overview": "Bir serseri, kör bir çiçekçi kıza aşık olur ve eksantrik bir milyonerle arkadaş olur."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -131,
+            "name": "Charlie Chaplin",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -131,
+            "name": "Charlie Chaplin",
+            "character": "A Tramp",
+            "order": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": -24,
+      "title": "Singin' in the Rain",
+      "original_title": "Singin' in the Rain",
+      "original_language": "en",
+      "release_date": "1952-04-11",
+      "runtime": 103,
+      "countries": ["US"],
+      "adult": false,
+      "popularity": 96.2,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [35, 10402, 10749],
+      "translations": {
+        "en": {
+          "title": "Singin' in the Rain",
+          "tagline": "",
+          "overview": "Silent film stars struggle to adapt as Hollywood transitions to talking pictures."
+        },
+        "tr": {
+          "title": "Yağmur Altında",
+          "tagline": "",
+          "overview": "Sessiz sinema yıldızları, Hollywood sesli filme geçerken uyum sağlamaya çalışır."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -132,
+            "name": "Gene Kelly",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -132,
+            "name": "Gene Kelly",
+            "character": "Don Lockwood",
+            "order": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": -25,
+      "title": "Vertigo",
+      "original_title": "Vertigo",
+      "original_language": "en",
+      "release_date": "1958-05-09",
+      "runtime": 128,
+      "countries": ["US"],
+      "adult": false,
+      "popularity": 92.5,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [9648, 10749, 53],
+      "translations": {
+        "en": {
+          "title": "Vertigo",
+          "tagline": "",
+          "overview": "A former detective with a fear of heights becomes obsessed with a woman he is following."
+        },
+        "tr": {
+          "title": "Sersemletici Aşk",
+          "tagline": "",
+          "overview": "Yükseklik korkusu olan eski bir dedektif, takip ettiği bir kadına saplantılı bir şekilde bağlanır."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -133,
+            "name": "Alfred Hitchcock",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -134,
+            "name": "James Stewart",
+            "character": "Scottie Ferguson",
+            "order": 0
+          },
+          {
+            "tmdb_id": -135,
+            "name": "Kim Novak",
+            "character": "Madeleine Elster",
+            "order": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": -26,
+      "title": "Psycho",
+      "original_title": "Psycho",
+      "original_language": "en",
+      "release_date": "1960-06-16",
+      "runtime": 109,
+      "countries": ["US"],
+      "adult": false,
+      "popularity": 88.8,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [27, 9648, 53],
+      "translations": {
+        "en": {
+          "title": "Psycho",
+          "tagline": "",
+          "overview": "A secretary on the run checks into a secluded motel run by a disturbed young man."
+        },
+        "tr": {
+          "title": "Sapık",
+          "tagline": "",
+          "overview": "Kaçan bir sekreter, rahatsız genç bir adamın işlettiği ıssız bir motele yerleşir."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -133,
+            "name": "Alfred Hitchcock",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -136,
+            "name": "Anthony Perkins",
+            "character": "Norman Bates",
+            "order": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": -27,
+      "title": "Persona",
+      "original_title": "Persona",
+      "original_language": "sv",
+      "release_date": "1966-10-18",
+      "runtime": 85,
+      "countries": ["SE"],
+      "adult": false,
+      "popularity": 85.1,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18],
+      "translations": {
+        "en": {
+          "title": "Persona",
+          "tagline": "",
+          "overview": "A nurse cares for an actress who has stopped speaking, and their identities begin to blur."
+        },
+        "tr": {
+          "title": "Persona",
+          "tagline": "",
+          "overview": "Bir hemşire, konuşmayı bırakmış bir aktrise bakar ve kimlikleri birbirine karışmaya başlar."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -137,
+            "name": "Ingmar Bergman",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -28,
+      "title": "The Seventh Seal",
+      "original_title": "Det sjunde inseglet",
+      "original_language": "sv",
+      "release_date": "1957-02-16",
+      "runtime": 96,
+      "countries": ["SE"],
+      "adult": false,
+      "popularity": 81.4,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18, 14],
+      "translations": {
+        "en": {
+          "title": "The Seventh Seal",
+          "tagline": "",
+          "overview": "A medieval knight returning from the Crusades plays chess with Death itself."
+        },
+        "tr": {
+          "title": "Yedinci Mühür",
+          "tagline": "",
+          "overview": "Haçlı Seferleri'nden dönen ortaçağ şövalyesi, Ölüm'le satranç oynar."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -137,
+            "name": "Ingmar Bergman",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -29,
+      "title": "Amélie",
+      "original_title": "Le Fabuleux Destin d'Amélie Poulain",
+      "original_language": "fr",
+      "release_date": "2001-04-25",
+      "runtime": 122,
+      "countries": ["FR"],
+      "adult": false,
+      "popularity": 77.7,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [35, 10749],
+      "translations": {
+        "en": {
+          "title": "Amélie",
+          "tagline": "",
+          "overview": "A shy Parisian waitress secretly orchestrates small acts of kindness for those around her."
+        },
+        "tr": {
+          "title": "Amélie",
+          "tagline": "",
+          "overview": "Çekingen bir Parisli garson, çevresindekiler için gizlice küçük iyilikler tasarlar."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -138,
+            "name": "Jean-Pierre Jeunet",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -139,
+            "name": "Audrey Tautou",
+            "character": "Amélie Poulain",
+            "order": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": -30,
+      "title": "City of God",
+      "original_title": "Cidade de Deus",
+      "original_language": "pt",
+      "release_date": "2002-08-30",
+      "runtime": 130,
+      "countries": ["BR"],
+      "adult": false,
+      "popularity": 74,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [80, 18],
+      "translations": {
+        "en": {
+          "title": "City of God",
+          "tagline": "",
+          "overview": "Two boys growing up in a Rio de Janeiro favela choose very different paths in life."
+        },
+        "tr": {
+          "title": "Tanrının Şehri",
+          "tagline": "",
+          "overview": "Rio de Janeiro'daki bir favelada büyüyen iki çocuk, hayatta çok farklı yollar seçer."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -140,
+            "name": "Fernando Meirelles",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -31,
+      "title": "Pan's Labyrinth",
+      "original_title": "El Laberinto del Fauno",
+      "original_language": "es",
+      "release_date": "2006-05-27",
+      "runtime": 118,
+      "countries": ["ES", "MX"],
+      "adult": false,
+      "popularity": 70.3,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [14, 18, 10752],
+      "translations": {
+        "en": {
+          "title": "Pan's Labyrinth",
+          "tagline": "",
+          "overview": "A young girl escapes into a dark fantasy realm during the aftermath of the Spanish Civil War."
+        },
+        "tr": {
+          "title": "Pan'ın Labirenti",
+          "tagline": "",
+          "overview": "Genç bir kız, İspanya İç Savaşı'nın ardından karanlık bir fantezi diyarına sığınır."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -141,
+            "name": "Guillermo del Toro",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -32,
+      "title": "Cinema Paradiso",
+      "original_title": "Nuovo Cinema Paradiso",
+      "original_language": "it",
+      "release_date": "1988-11-17",
+      "runtime": 155,
+      "countries": ["IT"],
+      "adult": false,
+      "popularity": 66.6,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18, 10749],
+      "translations": {
+        "en": {
+          "title": "Cinema Paradiso",
+          "tagline": "",
+          "overview": "A filmmaker recalls his childhood friendship with the projectionist of his village cinema."
+        },
+        "tr": {
+          "title": "Cinema Paradiso",
+          "tagline": "",
+          "overview": "Bir yönetmen, köyündeki sinemanın makinistiyle çocukluk arkadaşlığını hatırlar."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -142,
+            "name": "Giuseppe Tornatore",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -33,
+      "title": "The Grand Budapest Hotel",
+      "original_title": "The Grand Budapest Hotel",
+      "original_language": "en",
+      "release_date": "2014-02-26",
+      "runtime": 99,
+      "countries": ["US", "DE"],
+      "adult": false,
+      "popularity": 62.9,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [35, 18],
+      "translations": {
+        "en": {
+          "title": "The Grand Budapest Hotel",
+          "tagline": "",
+          "overview": "A legendary hotel concierge and his protégé are swept into a theft-and-murder caper."
+        },
+        "tr": {
+          "title": "Grand Budapest Oteli",
+          "tagline": "",
+          "overview": "Efsanevi bir otel konsiyerji ve çırağı, bir hırsızlık ve cinayet olayına sürüklenir."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -143,
+            "name": "Wes Anderson",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -144,
+            "name": "Ralph Fiennes",
+            "character": "M. Gustave",
+            "order": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": -34,
+      "title": "Eternal Sunshine of the Spotless Mind",
+      "original_title": "Eternal Sunshine of the Spotless Mind",
+      "original_language": "en",
+      "release_date": "2004-03-19",
+      "runtime": 108,
+      "countries": ["US"],
+      "adult": false,
+      "popularity": 59.2,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18, 10749, 878],
+      "translations": {
+        "en": {
+          "title": "Eternal Sunshine of the Spotless Mind",
+          "tagline": "",
+          "overview": "A heartbroken man undergoes a procedure to erase memories of his former girlfriend."
+        },
+        "tr": {
+          "title": "Sil Baştan",
+          "tagline": "",
+          "overview": "Kalbi kırık bir adam, eski sevgilisiyle ilgili anılarını sildirmek için bir işlem yaptırır."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -145,
+            "name": "Michel Gondry",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -146,
+            "name": "Jim Carrey",
+            "character": "Joel Barish",
+            "order": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": -35,
+      "title": "Blade Runner",
+      "original_title": "Blade Runner",
+      "original_language": "en",
+      "release_date": "1982-06-25",
+      "runtime": 117,
+      "countries": ["US"],
+      "adult": false,
+      "popularity": 55.5,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [878, 53],
+      "translations": {
+        "en": {
+          "title": "Blade Runner",
+          "tagline": "",
+          "overview": "A blade runner hunts down rogue synthetic humans in a dystopian future Los Angeles."
+        },
+        "tr": {
+          "title": "Bıçak Sırtı",
+          "tagline": "",
+          "overview": "Bir blade runner, distopik gelecekteki Los Angeles'ta kaçak sentetik insanları avlar."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -147,
+            "name": "Ridley Scott",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -148,
+            "name": "Harrison Ford",
+            "character": "Rick Deckard",
+            "order": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": -36,
+      "title": "2001: A Space Odyssey",
+      "original_title": "2001: A Space Odyssey",
+      "original_language": "en",
+      "release_date": "1968-04-02",
+      "runtime": 149,
+      "countries": ["US", "GB"],
+      "adult": false,
+      "popularity": 51.8,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [878, 12],
+      "translations": {
+        "en": {
+          "title": "2001: A Space Odyssey",
+          "tagline": "",
+          "overview": "A mysterious monolith influences human evolution and a mission to Jupiter."
+        },
+        "tr": {
+          "title": "2001: Bir Uzay Destanı",
+          "tagline": "",
+          "overview": "Gizemli bir monolit, insanlığın evrimini ve Jüpiter'e giden bir görevi etkiler."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -149,
+            "name": "Stanley Kubrick",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": []
+      }
+    },
+    {
+      "id": -37,
+      "title": "Alien",
+      "original_title": "Alien",
+      "original_language": "en",
+      "release_date": "1979-05-25",
+      "runtime": 117,
+      "countries": ["US", "GB"],
+      "adult": false,
+      "popularity": 48.1,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [27, 878],
+      "translations": {
+        "en": {
+          "title": "Alien",
+          "tagline": "",
+          "overview": "The crew of a commercial spacecraft is hunted by a deadly alien organism."
+        },
+        "tr": {
+          "title": "Yaratık",
+          "tagline": "",
+          "overview": "Ticari bir uzay geminin mürettebatı, ölümcül bir uzaylı organizma tarafından avlanır."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -147,
+            "name": "Ridley Scott",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -150,
+            "name": "Sigourney Weaver",
+            "character": "Ellen Ripley",
+            "order": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": -38,
+      "title": "The Shining",
+      "original_title": "The Shining",
+      "original_language": "en",
+      "release_date": "1980-05-23",
+      "runtime": 146,
+      "countries": ["US", "GB"],
+      "adult": false,
+      "popularity": 44.4,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [27, 18],
+      "translations": {
+        "en": {
+          "title": "The Shining",
+          "tagline": "",
+          "overview": "A winter caretaker's isolation at a remote hotel unleashes a violent, supernatural descent."
+        },
+        "tr": {
+          "title": "Cinnet",
+          "tagline": "",
+          "overview": "Ücra bir otelde kışı geçiren bir bekçi, şiddetli ve doğaüstü bir çöküşe sürüklenir."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -149,
+            "name": "Stanley Kubrick",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -151,
+            "name": "Jack Nicholson",
+            "character": "Jack Torrance",
+            "order": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": -39,
+      "title": "Life Is Beautiful",
+      "original_title": "La Vita è Bella",
+      "original_language": "it",
+      "release_date": "1997-12-20",
+      "runtime": 116,
+      "countries": ["IT"],
+      "adult": false,
+      "popularity": 40.7,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [35, 18, 10752],
+      "translations": {
+        "en": {
+          "title": "Life Is Beautiful",
+          "tagline": "",
+          "overview": "A father uses humor and imagination to shield his son from the horrors of a concentration camp."
+        },
+        "tr": {
+          "title": "Hayat Güzeldir",
+          "tagline": "",
+          "overview": "Bir baba, oğlunu bir toplama kampının dehşetinden korumak için mizah ve hayal gücünü kullanır."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -152,
+            "name": "Roberto Benigni",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -152,
+            "name": "Roberto Benigni",
+            "character": "Guido Orefice",
+            "order": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": -40,
+      "title": "Amadeus",
+      "original_title": "Amadeus",
+      "original_language": "en",
+      "release_date": "1984-09-19",
+      "runtime": 160,
+      "countries": ["US"],
+      "adult": false,
+      "popularity": 37,
+      "poster_path": null,
+      "backdrop_path": null,
+      "genre_ids": [18, 10402, 36],
+      "translations": {
+        "en": {
+          "title": "Amadeus",
+          "tagline": "",
+          "overview": "A rival composer becomes consumed by jealousy over Mozart's effortless genius."
+        },
+        "tr": {
+          "title": "Amadeus",
+          "tagline": "",
+          "overview": "Rakip bir besteci, Mozart'ın kolayca ortaya çıkan dehasına karşı kıskançlığa yenik düşer."
+        }
+      },
+      "credits": {
+        "crew": [
+          {
+            "tmdb_id": -153,
+            "name": "Miloš Forman",
+            "job": "Director",
+            "department": "Directing"
+          }
+        ],
+        "cast": [
+          {
+            "tmdb_id": -154,
+            "name": "F. Murray Abraham",
+            "character": "Antonio Salieri",
+            "order": 0
+          },
+          {
+            "tmdb_id": -155,
+            "name": "Tom Hulce",
+            "character": "Wolfgang Amadeus Mozart",
+            "order": 1
+          }
+        ]
+      }
+    }
+  ],
+  "collections": [
+    {
+      "slug": "yesilcam-klasikleri",
+      "kind": "curated",
+      "translations": {
+        "tr": {
+          "title": "Yeşilçam Klasikleri",
+          "intro": "Türk sinemasının unutulmaz klasikleri."
+        },
+        "en": {
+          "title": "Yeşilçam Classics",
+          "intro": "Unforgettable classics of Turkish cinema."
+        }
+      },
+      "filmTmdbIds": [-2, -3]
+    },
+    {
+      "slug": "yeni-turk-sinemasi",
+      "kind": "curated",
+      "translations": {
+        "tr": {
+          "title": "Yeni Türk Sineması",
+          "intro": "2000 sonrası Türk sinemasından öne çıkan yapımlar."
+        },
+        "en": {
+          "title": "New Turkish Cinema",
+          "intro": "Standout Turkish films from after 2000."
+        }
+      },
+      "filmTmdbIds": [-4, -5, -6]
+    },
+    {
+      "slug": "dunya-sinemasindan-basyapitlar",
+      "kind": "curated",
+      "translations": {
+        "tr": {
+          "title": "Dünya Sinemasından Başyapıtlar",
+          "intro": "Farklı ülkelerden zaman testinden geçmiş filmler."
+        },
+        "en": {
+          "title": "World Cinema Masterpieces",
+          "intro": "Time-tested films from around the world."
+        }
+      },
+      "filmTmdbIds": [-1, -10, -11, -30]
+    },
+    {
+      "slug": "ilk-randevu-filmleri",
+      "kind": "mood",
+      "translations": {
+        "tr": {
+          "title": "İlk Randevu Filmleri",
+          "intro": "Konuşmaya bahane olacak hafif ve sıcak filmler."
+        },
+        "en": {
+          "title": "First Date Films",
+          "intro": "Light, warm films that give you something to talk about."
+        }
+      },
+      "filmTmdbIds": [-29, -32, -1]
+    },
+    {
+      "slug": "birlikte-aglanacak-filmler",
+      "kind": "mood",
+      "translations": {
+        "tr": {
+          "title": "Birlikte Ağlanacak Filmler",
+          "intro": "Yanınızda mendille izlenecek filmler."
+        },
+        "en": {
+          "title": "Films to Cry Together",
+          "intro": "Keep the tissues nearby for these."
+        }
+      },
+      "filmTmdbIds": [-39, -32, -5]
+    },
+    {
+      "slug": "bilim-kurgu-ve-fantastik",
+      "kind": "genre",
+      "translations": {
+        "tr": {
+          "title": "Bilim Kurgu ve Fantastik",
+          "intro": "Başka dünyalara açılan filmler."
+        },
+        "en": {
+          "title": "Science Fiction & Fantasy",
+          "intro": "Films that open doors to other worlds."
+        }
+      },
+      "filmTmdbIds": [-35, -36, -37, -21, -31]
+    },
+    {
+      "slug": "gerilim-ve-gizem",
+      "kind": "genre",
+      "translations": {
+        "tr": {
+          "title": "Gerilim ve Gizem",
+          "intro": "Sizi koltuğunuza kenetleyecek filmler."
+        },
+        "en": {
+          "title": "Thriller & Mystery",
+          "intro": "Films that will keep you on the edge of your seat."
+        }
+      },
+      "filmTmdbIds": [-25, -26, -20]
+    },
+    {
+      "slug": "modern-klasikler",
+      "kind": "curated",
+      "translations": {
+        "tr": {
+          "title": "Modern Klasikler (2000 sonrası)",
+          "intro": "2000 sonrasının çoktan klasikleşmiş filmleri."
+        },
+        "en": {
+          "title": "Modern Classics (Post-2000)",
+          "intro": "Films from after 2000 that already feel like classics."
+        }
+      },
+      "filmTmdbIds": [-1, -19, -20, -31, -34]
+    },
+    {
+      "slug": "auteur-yonetmenler",
+      "kind": "curated",
+      "translations": {
+        "tr": {
+          "title": "Auteur Yönetmenler",
+          "intro": "Kendine has bir sinema dili kuran yönetmenlerden seçmeler."
+        },
+        "en": {
+          "title": "Auteur Directors",
+          "intro": "Selections from directors with a singular cinematic voice."
+        }
+      },
+      "filmTmdbIds": [-4, -5, -9, -27, -28]
+    },
+    {
+      "slug": "festival-favorileri",
+      "kind": "curated",
+      "translations": {
+        "tr": {
+          "title": "Festival Favorileri",
+          "intro": "Cannes'dan Berlinale'ye ödüllü filmler."
+        },
+        "en": {
+          "title": "Festival Favorites",
+          "intro": "Award-winning films from Cannes to Berlinale."
+        }
+      },
+      "filmTmdbIds": [-19, -30, -3]
+    },
+    {
+      "slug": "belgeseller",
+      "kind": "genre",
+      "translations": {
+        "tr": {
+          "title": "Belgeseller",
+          "intro": "Gerçek hikayeler, gerçek insanlar."
+        },
+        "en": {
+          "title": "Documentaries",
+          "intro": "Real stories, real people."
+        }
+      },
+      "filmTmdbIds": []
+    },
+    {
+      "slug": "animasyon",
+      "kind": "genre",
+      "translations": {
+        "tr": {
+          "title": "Animasyon (yetişkinler için de)",
+          "intro": "Yaşa bakmadan izlenecek animasyon filmleri."
+        },
+        "en": {
+          "title": "Animation (for adults too)",
+          "intro": "Animated films worth watching at any age."
+        }
+      },
+      "filmTmdbIds": [-21, -22]
+    }
+  ]
+}

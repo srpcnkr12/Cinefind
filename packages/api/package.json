@@ -1,0 +1,31 @@
+{
+  "name": "@reelmate/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./films": "./src/films.ts",
+    "./user-films": "./src/user-films.ts",
+    "./discovery": "./src/discovery.ts",
+    "./chat": "./src/chat.ts",
+    "./social": "./src/social.ts",
+    "./monetization": "./src/monetization.ts",
+    "./admin": "./src/admin.ts",
+    "./compliance": "./src/compliance.ts",
+    "./supabase-client": "./src/supabase-client.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@reelmate/core": "workspace:*",
+    "@supabase/supabase-js": "2.116.0"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3"
+  }
+}

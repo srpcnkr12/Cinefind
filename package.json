@@ -1,0 +1,41 @@
+{
+  "name": "reelmate",
+  "private": true,
+  "version": "0.0.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@12.4.1",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "lint:scripts": "eslint supabase",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "db:reset": "supabase db reset",
+    "db:test": "supabase test db",
+    "db:seed:demo": "node supabase/seed/demo-users.mjs",
+    "e2e:web": "pnpm --filter web e2e",
+    "e2e:mobile": "pnpm --filter mobile e2e",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@reelmate/config": "workspace:*",
+    "turbo": "2.10.12",
+    "typescript": "6.0.3",
+    "eslint": "10.10.0",
+    "prettier": "3.9.6",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "husky": "9.1.7",
+    "lint-staged": "17.5.1",
+    "supabase": "2.117.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,mjs,cjs,json,md,css}": [
+      "prettier --write"
+    ]
+  }
+}
