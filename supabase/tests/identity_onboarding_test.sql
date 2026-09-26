@@ -1,5 +1,5 @@
 BEGIN;
-SELECT plan(6);
+SELECT plan(7);
 
 -- ============================================================================
 -- Test kullanıcıları (auth.users insert'i on_auth_user_created trigger'ını tetikler)
@@ -71,6 +71,24 @@ select is(
   (select count(*)::int from consents where user_id = '11111111-1111-1111-1111-111111111111' and consent_type = 'kvkk_notice'),
   2,
   'aynı rıza türünün farklı sürümleri ayrı satırlar olarak (üzerine yazmadan) tutuluyor'
+);
+
+-- ============================================================================
+-- Onboarding ilerlemesi `last_active_at` damgasını atıyor
+-- ============================================================================
+-- Regresyon koruması: bu alanı yalnızca testler ve seed betiği doldurduğu için
+-- gerçek kullanıcılarda hep NULL kalıyordu ve `get_discovery_deck`'in
+-- "son 30 günde aktif" filtresi onları kalıcı olarak eliyordu.
+set local role authenticated;
+set local request.jwt.claims to '{"sub":"11111111-1111-1111-1111-111111111111","role":"authenticated"}';
+update profiles set last_active_at = null where id = '11111111-1111-1111-1111-111111111111';
+select update_onboarding_step('completed');
+reset role;
+
+select isnt(
+  (select last_active_at from profiles where id = '11111111-1111-1111-1111-111111111111'),
+  null,
+  'update_onboarding_step last_active_at damgasını atıyor (keşfette görünürlük için şart)'
 );
 
 SELECT * FROM finish();

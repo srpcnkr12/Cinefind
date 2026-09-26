@@ -18,6 +18,7 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { trackEvent } from "@reelmate/core/domain/analytics";
 import { AnalyticsProvider } from "@/lib/analytics";
+import { useTouchLastActive } from "@/lib/last-active";
 import { initSentry } from "@/lib/sentry";
 
 SplashScreen.preventAutoHideAsync();
@@ -32,6 +33,8 @@ function RootLayout() {
     HankenGrotesk_600SemiBold,
   });
   const fontsLoaded = displayLoaded && bodyLoaded;
+
+  useTouchLastActive();
 
   useEffect(() => {
     if (fontsLoaded) {
