@@ -314,15 +314,28 @@ async function main() {
     );
     if (members.length < 2) continue;
     const dialog = DIALOGS[index % DIALOGS.length];
+
+    // Diyalog, demo-users.mjs'in bıraktığı açılış mesajının ARDINDAN gelmeli.
+    // Sabit bir geçmiş zaman kullanmak açılış mesajını sohbetin en yeni mesajı
+    // yapıyor ve konuşma ekranda ters sırada okunuyordu.
+    const { data: lastMessage } = await admin
+      .from("messages")
+      .select("created_at")
+      .eq("conversation_id", conversation.id)
+      .order("created_at", { ascending: false })
+      .limit(1)
+      .maybeSingle();
+    const startedAt = lastMessage
+      ? new Date(lastMessage.created_at).getTime()
+      : Date.now() - 86400000;
+
     const rows = dialog.map((body, k) => ({
       conversation_id: conversation.id,
       // Açılış mesajı zaten members[0]'dan geldiği için sırayı ondan devam ettiriyoruz.
       sender_id: members[(k + 1) % 2],
       kind: "text",
       body,
-      created_at: new Date(
-        Date.now() - (dialog.length - k) * 3600000,
-      ).toISOString(),
+      created_at: new Date(startedAt + (k + 1) * 600000).toISOString(),
     }));
     const { error: msgError } = await admin.from("messages").insert(rows);
     if (msgError) {
