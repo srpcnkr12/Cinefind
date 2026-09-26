@@ -40,14 +40,28 @@ jobs:
       - name: Test
         run: pnpm test
 
-      - name: Build web
-        run: pnpm --filter web build
-
-  supabase-migrations:
-    name: Validate Supabase migrations
+  # Web build'i ayrı tutuyoruz: `next build` katalog sayfalarını ön-render
+  # ederken Supabase'e gerçekten bağlanıyor ve erişemezse build'i hata vererek
+  # durduruyor. Bu istenen davranış (boş sayfa yayınlamaktansa build patlasın),
+  # bu yüzden CI'a sahte env vermek yerine gerçek bir veritabanı veriyoruz.
+  # pgTAP de aynı örneği kullandığı için Supabase tek kez başlatılıyor.
+  database-and-web-build:
+    name: Migrations, pgTAP, web build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - uses: supabase/setup-cli@v1
         with:
@@ -58,3 +72,10 @@ jobs:
 
       - name: Run pgTAP / RLS tests
         run: supabase test db
+
+      - name: Build web
+        run: |
+          eval "$(supabase status -o env | sed 's/^/export /')"
+          NEXT_PUBLIC_SUPABASE_URL="$API_URL" \
+          NEXT_PUBLIC_SUPABASE_ANON_KEY="$ANON_KEY" \
+            pnpm --filter web build

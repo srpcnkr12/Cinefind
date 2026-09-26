@@ -2,6 +2,20 @@ BEGIN;
 SELECT plan(7);
 
 -- ============================================================================
+-- Katalog fixture'ı
+-- ============================================================================
+-- Bu test film kataloğuna bağımlı, ama katalog migration'larla değil `tmdb-sync`
+-- Edge Function'ıyla doluyor; `supabase db reset` sonrası (ve CI'da) tablo boş
+-- kalıyor ve testler `film_id` NOT NULL ihlaliyle patlıyordu. film_catalog_test
+-- ile aynı desen: test kendi verisini kurar. Kimlikler bilinçli olarak en küçük
+-- UUID'ler — testteki `order by id limit 1` ifadeleri katalogda başka filmler
+-- olsa da deterministik biçimde bunları seçsin.
+insert into films (id, tmdb_id, original_title, original_language, slug, adult, tmdb_synced_at)
+values
+  ('00000000-0000-0000-0000-00000000f001', 990001, 'Sinematek Test Film A', 'tr', 'sinematek-test-a', false, now()),
+  ('00000000-0000-0000-0000-00000000f002', 990002, 'Sinematek Test Film B', 'tr', 'sinematek-test-b', false, now());
+
+-- ============================================================================
 -- Test kullanıcıları
 -- ============================================================================
 insert into auth.users (
