@@ -2,6 +2,7 @@ export * from "./supabase-client";
 export * from "./films";
 export * from "./user-films";
 export * from "./discovery";
+export * from "./profile";
 export * from "./chat";
 export * from "./social";
 export * from "./monetization";

@@ -315,6 +315,14 @@ async function main() {
         rating: randomBetween(2, 4.5),
       });
     }
+    // İzleme listesi de dolsun — yoksa Sinematek'in "Listem" sekmesi boş açılıyor.
+    for (const filmId of pool.slice(8, 11)) {
+      await admin.from("user_films").insert({
+        user_id: userId,
+        film_id: filmId,
+        status: "watchlist",
+      });
+    }
 
     if (i % 10 === 0) console.log(`  ${i + 1}/${USER_COUNT} oluşturuldu...`);
   }

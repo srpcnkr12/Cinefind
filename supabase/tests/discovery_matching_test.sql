@@ -30,13 +30,18 @@ where id in ('b0000000-0000-0000-0000-00000000000b', 'c0000000-0000-0000-0000-00
 
 update profiles set deleted_at = now() where id = 'd0000000-0000-0000-0000-00000000000d';
 
--- Hepsi İstanbul yakınında (birbirine ~1 km).
+-- Hepsi birbirine ~200 m mesafede, ama başka hiçbir profilin bulunmadığı ıssız
+-- bir noktada (Atlantik ortası). Fixture'lar İstanbul'a konduğunda demo seed'inin
+-- 60 kullanıcısı da A'nın 100 km yarıçapına giriyor, deste 20 kişiyle sınırlı
+-- olduğu ve skorlamada rastgele bir "keşif" dilimi bulunduğu için B bazen
+-- listeden düşüyor ve test rastgele başarısız oluyordu. Uzak bir konum testi
+-- veritabanındaki diğer verilerden bağımsız kılar.
 insert into profile_locations (user_id, geog) values
-  ('a0000000-0000-0000-0000-00000000000a', extensions.st_setsrid(extensions.st_makepoint(28.9784, 41.0082), 4326)::extensions.geography),
-  ('b0000000-0000-0000-0000-00000000000b', extensions.st_setsrid(extensions.st_makepoint(28.9800, 41.0090), 4326)::extensions.geography),
-  ('c0000000-0000-0000-0000-00000000000c', extensions.st_setsrid(extensions.st_makepoint(28.9800, 41.0090), 4326)::extensions.geography),
-  ('d0000000-0000-0000-0000-00000000000d', extensions.st_setsrid(extensions.st_makepoint(28.9800, 41.0090), 4326)::extensions.geography),
-  ('e0000000-0000-0000-0000-00000000000e', extensions.st_setsrid(extensions.st_makepoint(28.9800, 41.0090), 4326)::extensions.geography);
+  ('a0000000-0000-0000-0000-00000000000a', extensions.st_setsrid(extensions.st_makepoint(-30.0000, 0.0000), 4326)::extensions.geography),
+  ('b0000000-0000-0000-0000-00000000000b', extensions.st_setsrid(extensions.st_makepoint(-29.9984, 0.0008), 4326)::extensions.geography),
+  ('c0000000-0000-0000-0000-00000000000c', extensions.st_setsrid(extensions.st_makepoint(-29.9984, 0.0008), 4326)::extensions.geography),
+  ('d0000000-0000-0000-0000-00000000000d', extensions.st_setsrid(extensions.st_makepoint(-29.9984, 0.0008), 4326)::extensions.geography),
+  ('e0000000-0000-0000-0000-00000000000e', extensions.st_setsrid(extensions.st_makepoint(-29.9984, 0.0008), 4326)::extensions.geography);
 
 insert into profile_photos (user_id, storage_path, position, moderation_status) values
   ('b0000000-0000-0000-0000-00000000000b', 'b/1.jpg', 1, 'approved'),

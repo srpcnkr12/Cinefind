@@ -42,7 +42,7 @@ const PHOTO_SIGNED_URL_TTL_SECONDS = 60 * 60;
  * TMDB göreli yolu değil. Bu yüzden `tmdbImageUrl` ile birleştirilemez;
  * gösterim için gerçek bir imzalı URL üretilmesi gerekir.
  */
-async function signPhotoPaths(
+export async function signPhotoPaths(
   db: SupabaseClient,
   paths: (string | null)[],
 ): Promise<Map<string, string>> {

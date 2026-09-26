@@ -248,7 +248,11 @@
     "statsRewatches": "Tekrar izleme",
     "statsTopGenre": "En çok izlenen tür",
     "statsTopDecade": "En çok izlenen on yıl",
-    "statsNoData": "Henüz istatistik için yeterli veri yok."
+    "statsNoData": "Henüz istatistik için yeterli veri yok.",
+    "stripWatched": "izlendi",
+    "stripAverage": "ortalama",
+    "stripRewatch": "tekrar",
+    "statsMore": "En çok: {genre} · {decade}'ler"
   },
   "filmScreen": {
     "loading": "Yükleniyor…",
@@ -340,6 +344,16 @@
     "postTitle": "Paylaşım",
     "commentPlaceholder": "Yorum yaz",
     "send": "Gönder"
+  },
+  "profile": {
+    "kadrajim": "Kadrajım",
+    "kadrajimEmpty": "Henüz 4 favori film seçmedin.",
+    "bioEmpty": "Henüz bir şey yazmadın.",
+    "editProfile": "Profili düzenle",
+    "filmsWatched": "film",
+    "avgRating": "ortalama",
+    "inWatchlist": "listemde",
+    "menu": "Hesap"
   },
   "userProfile": {
     "notFound": "Kullanıcı bulunamadı.",

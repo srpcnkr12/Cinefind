@@ -15,7 +15,8 @@
     "./monetization": "./src/monetization.ts",
     "./admin": "./src/admin.ts",
     "./compliance": "./src/compliance.ts",
-    "./supabase-client": "./src/supabase-client.ts"
+    "./supabase-client": "./src/supabase-client.ts",
+    "./profile": "./src/profile.ts"
   },
   "scripts": {
     "lint": "eslint .",

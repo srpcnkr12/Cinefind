@@ -248,7 +248,11 @@
     "statsRewatches": "Rewatches",
     "statsTopGenre": "Most-watched genre",
     "statsTopDecade": "Most-watched decade",
-    "statsNoData": "Not enough data yet for stats."
+    "statsNoData": "Not enough data yet for stats.",
+    "stripWatched": "watched",
+    "stripAverage": "average",
+    "stripRewatch": "rewatch",
+    "statsMore": "Most: {genre} · {decade}s"
   },
   "filmScreen": {
     "loading": "Loading…",
@@ -340,6 +344,16 @@
     "postTitle": "Post",
     "commentPlaceholder": "Write a comment",
     "send": "Send"
+  },
+  "profile": {
+    "kadrajim": "My Frame",
+    "kadrajimEmpty": "You haven't picked your 4 favourites yet.",
+    "bioEmpty": "You haven't written anything yet.",
+    "editProfile": "Edit profile",
+    "filmsWatched": "films",
+    "avgRating": "average",
+    "inWatchlist": "watchlist",
+    "menu": "Account"
   },
   "userProfile": {
     "notFound": "User not found.",

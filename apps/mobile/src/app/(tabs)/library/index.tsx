@@ -1,12 +1,5 @@
 import { useCallback, useState } from "react";
-import {
-  FlatList,
-  Image,
-  Pressable,
-  ScrollView,
-  Text,
-  View,
-} from "react-native";
+import { FlatList, Image, Pressable, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { router, useFocusEffect } from "expo-router";
 import {
@@ -23,7 +16,10 @@ import type { FilmStats } from "@reelmate/core/domain/sinematek";
 import { resolveLocale, useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";
 
-type Segment = "watched" | "watchlist" | "diary" | "lines" | "stats";
+// "İstatistik" artık bir sekme değil, listenin üstünde sabit duran bir şerit:
+// beş sekme yatay kaydırmaya sığmıyor ve etiketleri kırpılıyordu. Kalan dördü
+// eşit genişlikte tek satıra sığıyor.
+type Segment = "watched" | "watchlist" | "diary" | "lines";
 
 export default function LibraryScreen() {
   const t = useMessages().library;
@@ -36,14 +32,14 @@ export default function LibraryScreen() {
   const [stats, setStats] = useState<FilmStats | null>(null);
 
   const load = useCallback(async () => {
+    // İstatistik şeridi her sekmede görünüyor, o yüzden segmentten bağımsız çekiliyor.
+    setStats(await getMyFilmStats(supabase));
     if (segment === "watched" || segment === "watchlist") {
       setLibrary(await getMyLibrary(supabase, locale));
     } else if (segment === "diary") {
       setDiary(await getMyDiary(supabase, locale));
-    } else if (segment === "lines") {
-      setLines(await getMyFilmLines(supabase, locale));
     } else {
-      setStats(await getMyFilmStats(supabase));
+      setLines(await getMyFilmLines(supabase, locale));
     }
   }, [segment, locale]);
 
@@ -58,7 +54,6 @@ export default function LibraryScreen() {
     { key: "watchlist", label: t.segmentWatchlist },
     { key: "diary", label: t.segmentDiary },
     { key: "lines", label: t.segmentLines },
-    { key: "stats", label: t.segmentStats },
   ];
 
   return (
@@ -81,26 +76,29 @@ export default function LibraryScreen() {
         </Pressable>
       </View>
 
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerClassName="gap-2 px-6 py-4"
-      >
+      <StatsStrip stats={stats} />
+
+      {/* Dört sekme eşit genişlikte tek satıra sığıyor; yatay kaydırma ve
+          etiket kırpılması bu yüzden kaldırıldı. */}
+      <View className="flex-row gap-1.5 px-6 pb-3 pt-4">
         {segments.map((s) => (
           <Pressable
             key={s.key}
             accessibilityRole="button"
+            accessibilityState={{ selected: segment === s.key }}
             onPress={() => setSegment(s.key)}
-            className={`rounded-button px-4 py-2 ${segment === s.key ? "bg-reel" : "bg-surface-1-light dark:bg-surface-1-dark"}`}
+            className={`flex-1 items-center rounded-button py-2.5 ${segment === s.key ? "bg-reel" : "bg-surface-1-light dark:bg-surface-1-dark"}`}
           >
             <Text
+              numberOfLines={1}
+              adjustsFontSizeToFit
               className={`font-body-semibold text-t12 ${segment === s.key ? "text-white" : "text-ink dark:text-screen"}`}
             >
               {s.label}
             </Text>
           </Pressable>
         ))}
-      </ScrollView>
+      </View>
 
       {segment === "watched" || segment === "watchlist" ? (
         <LibraryList
@@ -114,8 +112,48 @@ export default function LibraryScreen() {
       {segment === "lines" ? (
         <LinesList entries={lines} emptyText={t.emptyLines} />
       ) : null}
-      {segment === "stats" ? <StatsView stats={stats} /> : null}
     </SafeAreaView>
+  );
+}
+
+/** Listenin üstünde sabit duran özet şerit (eski "İstatistik" sekmesinin yerine). */
+function StatsStrip({ stats }: { stats: FilmStats | null }) {
+  const t = useMessages().library;
+  const tiles = [
+    { value: String(stats?.totalWatched ?? 0), label: t.stripWatched },
+    {
+      value: stats?.averageRating ? stats.averageRating.toFixed(1) : "—",
+      label: t.stripAverage,
+    },
+    { value: String(stats?.rewatchCount ?? 0), label: t.stripRewatch },
+  ];
+  const topGenre = stats?.topGenres[0]?.slug;
+
+  return (
+    <View className="gap-2 px-6 pt-4">
+      <View className="flex-row gap-3">
+        {tiles.map((tile) => (
+          <View
+            key={tile.label}
+            className="flex-1 items-center gap-0.5 rounded-card bg-surface-1-light py-3 dark:bg-surface-1-dark"
+          >
+            <Text className="font-display text-t20 text-ink dark:text-screen">
+              {tile.value}
+            </Text>
+            <Text className="font-body text-t12 text-ink/60 dark:text-screen/60">
+              {tile.label}
+            </Text>
+          </View>
+        ))}
+      </View>
+      {topGenre && stats?.topDecade ? (
+        <Text className="font-body text-t12 text-ink/60 dark:text-screen/60">
+          {t.statsMore
+            .replace("{genre}", topGenre)
+            .replace("{decade}", String(stats.topDecade))}
+        </Text>
+      ) : null}
+    </View>
   );
 }
 
@@ -262,44 +300,5 @@ function FilmRow({
         </Text>
       ) : null}
     </Pressable>
-  );
-}
-
-function StatsView({ stats }: { stats: FilmStats | null }) {
-  const t = useMessages().library;
-  if (!stats || stats.totalWatched === 0) {
-    return <EmptyState text={t.statsNoData} />;
-  }
-  const rows: { label: string; value: string }[] = [
-    { label: t.statsWatched, value: String(stats.totalWatched) },
-    { label: t.statsWatchlist, value: String(stats.totalWatchlist) },
-    {
-      label: t.statsAverageRating,
-      value: stats.averageRating ? stats.averageRating.toFixed(1) : "—",
-    },
-    { label: t.statsRewatches, value: String(stats.rewatchCount) },
-  ];
-  if (stats.topGenres[0]) {
-    rows.push({ label: t.statsTopGenre, value: stats.topGenres[0].slug });
-  }
-  if (stats.topDecade !== null) {
-    rows.push({ label: t.statsTopDecade, value: `${stats.topDecade}s` });
-  }
-  return (
-    <ScrollView contentContainerClassName="gap-3 px-6 pb-8">
-      {rows.map((row) => (
-        <View
-          key={row.label}
-          className="flex-row items-center justify-between rounded-card bg-surface-1-light p-4 dark:bg-surface-1-dark"
-        >
-          <Text className="font-body text-t14 text-ink dark:text-screen">
-            {row.label}
-          </Text>
-          <Text className="font-body-semibold text-t16 text-ink dark:text-screen">
-            {row.value}
-          </Text>
-        </View>
-      ))}
-    </ScrollView>
   );
 }
