@@ -67,15 +67,22 @@ jobs:
         with:
           version: latest
 
+      # `supabase db start` yalnızca Postgres'i ayağa kaldırıyor; Kong/REST kapalı
+      # kaldığı için web build'in ihtiyaç duyduğu REST API adresi oluşmuyor.
+      # Tam yığın gerekiyor (pgTAP da bu örnekle çalışıyor).
       - name: Start local Supabase and apply migrations
-        run: supabase db start
+        run: supabase start
 
       - name: Run pgTAP / RLS tests
         run: supabase test db
 
       - name: Build web
         run: |
-          eval "$(supabase status -o env | sed 's/^/export /')"
+          # `status -o env` çıktısında "Stopped services: [...]" gibi bilgi
+          # satırları da olabiliyor; yalnızca KEY=VALUE satırlarını alıyoruz.
+          eval "$(supabase status -o env | grep -E '^[A-Z0-9_]+=' | sed 's/^/export /')"
+          : "${API_URL:?supabase status API_URL döndürmedi}"
+          : "${ANON_KEY:?supabase status ANON_KEY döndürmedi}"
           NEXT_PUBLIC_SUPABASE_URL="$API_URL" \
           NEXT_PUBLIC_SUPABASE_ANON_KEY="$ANON_KEY" \
             pnpm --filter web build
