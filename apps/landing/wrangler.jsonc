@@ -1,0 +1,15 @@
+/**
+ * Movieholix tanıtım sitesi — yalnızca statik varlık sunan bir Worker.
+ * Uygulamanın kendisi burada DEĞİL: ne Supabase bağlantısı, ne veri, ne
+ * ürün mantığı. Amaç herkese açık bir adres (ör. TMDB API başvurusunun
+ * istediği "Application URL") ve basit bir tanıtım.
+ * Bkz. docs/adr/0021-landing-site-only-on-cloudflare.md
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "movieholix",
+  "compatibility_date": "2026-10-06",
+  "assets": {
+    "directory": "./public"
+  }
+}

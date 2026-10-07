@@ -1,0 +1,14 @@
+{
+  "name": "landing",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "lint": "echo \"landing: statik HTML, lint yok\"",
+    "typecheck": "echo \"landing: statik HTML, typecheck yok\""
+  },
+  "devDependencies": {
+    "wrangler": "4.145.0"
+  }
+}
