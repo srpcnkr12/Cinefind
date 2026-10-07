@@ -178,10 +178,10 @@ create table watch_providers_cache (
 -- Arama indeksleri (PRD 9.7)
 -- ============================================================================
 create index film_translations_title_trgm_idx
-  on film_translations using gin (normalize_tr(title) gin_trgm_ops);
+  on film_translations using gin (normalize_tr(title) extensions.gin_trgm_ops);
 
 create index films_original_title_trgm_idx
-  on films using gin (normalize_tr(original_title) gin_trgm_ops);
+  on films using gin (normalize_tr(original_title) extensions.gin_trgm_ops);
 
 -- ============================================================================
 -- RLS — herkese okuma, yalnızca service_role yazma (PRD 8.3)
@@ -256,8 +256,8 @@ as $$
       extract(year from f.release_date)::int as release_year,
       f.poster_path,
       greatest(
-        similarity(normalize_tr(ft.title), normalized.q),
-        similarity(normalize_tr(f.original_title), normalized.q)
+        extensions.similarity(normalize_tr(ft.title), normalized.q),
+        extensions.similarity(normalize_tr(f.original_title), normalized.q)
       ) as score
     from films f
     join film_translations ft on ft.film_id = f.id

@@ -49,7 +49,7 @@ create policy "profiles_owner_update" on profiles for update using (auth.uid() =
 -- ============================================================================
 create table profile_locations (
   user_id uuid primary key references profiles (id) on delete cascade,
-  geog geography (point, 4326),
+  geog extensions.geography (point, 4326),
   geohash5 text,
   updated_at timestamptz not null default now()
 );
