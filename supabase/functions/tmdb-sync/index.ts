@@ -113,12 +113,25 @@ export default {
       );
     }
 
+    // Katalog değiştiyse kural tabanlı koleksiyonları tazele (PRD 6.5).
+    // Yoksa yeni filmler koleksiyonlara hiç girmez ve /explore eskir.
+    let collectionLinks: number | null = null;
+    if (filmsUpserted > 0) {
+      const { data: refreshed, error: refreshError } =
+        await ctx.supabaseAdmin.rpc("refresh_curated_collections");
+      if (refreshError) {
+        return Response.json({ error: refreshError.message }, { status: 500 });
+      }
+      collectionLinks = refreshed;
+    }
+
     return Response.json({
       provider: provider.name,
       candidatesScanned: seen.size,
       filmsUpserted,
       filmsSkippedFresh,
       collectionsSeeded,
+      collectionLinks,
     });
   }),
 };
