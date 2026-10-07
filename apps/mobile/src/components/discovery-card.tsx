@@ -8,8 +8,11 @@ import Animated, {
   withTiming,
 } from "react-native-reanimated";
 import * as Haptics from "expo-haptics";
-import type { DiscoveryCandidate, SwipeAction } from "@reelmate/api/discovery";
-import { tmdbImageUrl } from "@reelmate/core/domain/film";
+import type {
+  DiscoveryCandidate,
+  SwipeAction,
+} from "@movieholix/api/discovery";
+import { tmdbImageUrl } from "@movieholix/core/domain/film";
 import { useMessages } from "@/lib/i18n";
 
 const SWIPE_THRESHOLD = 120;

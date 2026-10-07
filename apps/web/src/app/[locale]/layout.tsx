@@ -7,11 +7,11 @@ import { routing } from "@/i18n/routing";
 import { ThemeInitScript } from "@/components/theme-init-script";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import { brand } from "@reelmate/config/brand";
+import { brand } from "@movieholix/config/brand";
 import {
   buildOrganizationJsonLd,
   buildMobileApplicationJsonLd,
-} from "@reelmate/core/seo/json-ld";
+} from "@movieholix/core/seo/json-ld";
 import "../globals.css";
 
 // "Big Shoulders Display" next/font/google kataloğunda yok (bkz. docs/adr/0003-fonts.md),

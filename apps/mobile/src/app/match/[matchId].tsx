@@ -7,7 +7,7 @@ import Animated, {
   useSharedValue,
   withSpring,
 } from "react-native-reanimated";
-import { tmdbImageUrl } from "@reelmate/core/domain/film";
+import { tmdbImageUrl } from "@movieholix/core/domain/film";
 import { useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";
 

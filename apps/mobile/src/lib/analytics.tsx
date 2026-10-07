@@ -1,6 +1,6 @@
 import { useEffect, type ReactNode } from "react";
 import { PostHogProvider, usePostHog } from "posthog-react-native";
-import { setAnalyticsSink } from "@reelmate/core/domain/analytics";
+import { setAnalyticsSink } from "@movieholix/core/domain/analytics";
 
 /**
  * PRD 17 — PostHog. `EXPO_PUBLIC_POSTHOG_KEY` bu ortamda hiç ayarlanmadı

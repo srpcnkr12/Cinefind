@@ -1,8 +1,8 @@
-# Reelmate — Film Zevki Üzerinden Tanışma ve Sinefil Sosyal Uygulaması
+# Movieholix — Film Zevki Üzerinden Tanışma ve Sinefil Sosyal Uygulaması
 
 ## Claude Code için Ürün + Teknik Spesifikasyon (PRD & Build Prompt)
 
-> **Çalışma adı:** Reelmate (placeholder). Marka adı, renkleri ve metinleri tek bir yerden (`packages/config/brand.ts` + `packages/i18n`) değiştirilebilir olmalı.
+> **Çalışma adı:** Movieholix (placeholder). Marka adı, renkleri ve metinleri tek bir yerden (`packages/config/brand.ts` + `packages/i18n`) değiştirilebilir olmalı.
 > **Referans ürün:** bookspace.co (kitapseverler için tanışma uygulaması). Bookspace yalnızca **ürün/iş modeli referansıdır**. Onlara ait hiçbir metin, görsel, logo, illüstrasyon, renk paleti veya marka öğesi kopyalanmayacak. Her şey özgün üretilecek.
 
 ---
@@ -37,7 +37,7 @@
 
 ### 1.2 Kavram eşleme tablosu (kitap → film)
 
-| Bookspace kavramı                    | Reelmate karşılığı                                                            | Not                                              |
+| Bookspace kavramı                    | Movieholix karşılığı                                                          | Not                                              |
 | ------------------------------------ | ----------------------------------------------------------------------------- | ------------------------------------------------ |
 | Kütüphane / kitaplık                 | **Sinematek** (kişisel film arşivi)                                           | Profilin kalbi                                   |
 | Okuyorum / Okudum / Okumak istiyorum | **İzledim / İzleme listem** + **Film günlüğü** (tarihli kayıt, tekrar izleme) | Filmde "okuyorum" durumu anlamsız; yerine günlük |
@@ -56,7 +56,7 @@
 
 ## 2. Konumlandırma ve Farklılaşma
 
-**Tek cümle:** Reelmate, izlediğin filmleri kaydettiğin bir sinema günlüğü; film zevki seninkiyle örtüşen insanlarla tanışmanı ve ilk sohbeti ortak bir filmden başlatmanı sağlar.
+**Tek cümle:** Movieholix, izlediğin filmleri kaydettiğin bir sinema günlüğü; film zevki seninkiyle örtüşen insanlarla tanışmanı ve ilk sohbeti ortak bir filmden başlatmanı sağlar.
 
 **Hedef kitle:** 20–40 yaş, düzenli film izleyen, Letterboxd/IMDb kullanan veya kullanmayı bırakmış, klasik dating uygulamalarının yüzeyselliğinden yorulmuş kişiler. İlk pazar Türkiye (TR/EN), sonra İngilizce konuşulan pazarlar.
 
@@ -300,7 +300,7 @@ Ana sayfa / Filmler / Aşk Zamanı                         (breadcrumb)
 Alt yapışkan bar (mobil): "Sinematek'ine ekle — uygulamayı indir"  [×]
 ```
 
-- Başlık tag'i kalıbı: `{Film Adı} ({Yıl}) — Özet, Replikler ve Yorumlar | Reelmate`
+- Başlık tag'i kalıbı: `{Film Adı} ({Yıl}) — Özet, Replikler ve Yorumlar | Movieholix`
 - Aynı film için tek kanonik sayfa. Slug Türkçe karakterlerden arındırılmış (ç→c, ğ→g, ı→i, İ→i, ö→o, ş→s, ü→u).
 - Yetişkin içerikli (`adult=true`) filmler hiç indekslenmez ve katalogda yer almaz.
 
@@ -328,7 +328,7 @@ Alt yapışkan bar (mobil): "Sinematek'ine ekle — uygulamayı indir"  [×]
 
 **Kullanıcı hikâyeleri:** Lansmanda **boş bırakılır veya gizlenir**. Sahte yorum/testimonial yayınlanmaz (tüketici mevzuatı). Gerçek hikâyeler yazılı rıza ile `testimonials` tablosundan gelir.
 
-**SSS:** Reelmate nedir? Ücretsiz mi? Kimlerle eşleşirim? Sadece flört için mi? (Hayır: arkadaşlık ve film arkadaşı modu) Film verileri nereden geliyor? Güvenliğim için ne yapıyorsunuz? Hangi platformlarda var?
+**SSS:** Movieholix nedir? Ücretsiz mi? Kimlerle eşleşirim? Sadece flört için mi? (Hayır: arkadaşlık ve film arkadaşı modu) Film verileri nereden geliyor? Güvenliğim için ne yapıyorsunuz? Hangi platformlarda var?
 
 **Footer:** Keşfet, Filmler, Kişiler, Popüler, Blog, öne çıkan koleksiyonlar, dil seçici, yasal bağlantılar, sosyal medya, **TMDB atfı ve logosu** (bkz. 11.3).
 
@@ -443,7 +443,7 @@ final = 0.60*compat + 0.15*activityRecency + 0.10*profileQuality + 0.10*likedYou
 ### 8.2 Repo yapısı
 
 ```
-reelmate/
+movieholix/
 ├─ apps/
 │  ├─ mobile/              # Expo uygulaması
 │  ├─ web/                 # Next.js: pazarlama + SEO + /admin (rol korumalı route group)
@@ -962,7 +962,7 @@ RESEND_API_KEY=
 
 | #   | Karar                                                                                              | Varsayılan                                          |
 | --- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| 1   | Uygulamanın kalıcı adı ve alan adı (marka tescil araştırması yapılmalı)                            | Reelmate (placeholder)                              |
+| 1   | Uygulamanın kalıcı adı ve alan adı (marka tescil araştırması yapılmalı)                            | Movieholix (placeholder)                            |
 | 2   | Backend: Supabase mi, özel Node.js (NestJS) + Postgres mi?                                         | Supabase                                            |
 | 3   | TMDB ticari lisans görüşmesi başladı mı? Lisans yoksa lansman öncesi alternatif veri kaynağı planı | Geliştirme TMDB geliştirici anahtarı + fixture ile  |
 | 4   | Lansman pazarları ve dil sırası                                                                    | Türkiye (TR + EN)                                   |
@@ -980,7 +980,7 @@ RESEND_API_KEY=
 ## 22. `CLAUDE.md` İçeriği (kök dizine oluştur)
 
 ```md
-# CLAUDE.md — Reelmate
+# CLAUDE.md — Movieholix
 
 ## Proje
 

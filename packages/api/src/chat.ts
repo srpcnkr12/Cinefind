@@ -1,5 +1,5 @@
 import type { RealtimeChannel, SupabaseClient } from "@supabase/supabase-js";
-import { trackEvent } from "@reelmate/core/domain/analytics";
+import { trackEvent } from "@movieholix/core/domain/analytics";
 
 export type MessageKind =
   "text" | "film_card" | "line_card" | "system" | "icebreaker";

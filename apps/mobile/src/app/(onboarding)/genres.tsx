@@ -9,7 +9,7 @@ import {
   MAX_FAVORITE_GENRES,
   MIN_FAVORITE_GENRES,
   type GenreOption,
-} from "@reelmate/core/domain/profile";
+} from "@movieholix/core/domain/profile";
 
 export default function GenresScreen() {
   const t = useMessages().onboarding;

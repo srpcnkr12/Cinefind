@@ -1,6 +1,6 @@
 import posthog from "posthog-js";
 import * as Sentry from "@sentry/nextjs";
-import { setAnalyticsSink } from "@reelmate/core/domain/analytics";
+import { setAnalyticsSink } from "@movieholix/core/domain/analytics";
 
 /**
  * PRD 17/19 (Faz 10) — PostHog + Sentry, tarayıcı tarafı. Next.js'in

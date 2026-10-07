@@ -2,7 +2,7 @@
 
 import { useSyncExternalStore } from "react";
 
-const STORAGE_KEY = "reelmate-theme";
+const STORAGE_KEY = "movieholix-theme";
 
 function subscribe(onChange: () => void) {
   const observer = new MutationObserver(onChange);

@@ -7,7 +7,7 @@ import {
   markNotificationRead,
   respondToFollowRequest,
   type NotificationItem,
-} from "@reelmate/api/social";
+} from "@movieholix/api/social";
 import { useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";
 

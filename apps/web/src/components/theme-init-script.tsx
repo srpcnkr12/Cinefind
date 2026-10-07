@@ -1,6 +1,6 @@
 const THEME_INIT = `(function () {
   try {
-    var stored = localStorage.getItem("reelmate-theme");
+    var stored = localStorage.getItem("movieholix-theme");
     var dark = stored === "dark" || (stored !== "light" && window.matchMedia("(prefers-color-scheme: dark)").matches);
     if (dark) document.documentElement.classList.add("dark");
   } catch (e) {}

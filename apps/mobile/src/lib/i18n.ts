@@ -1,5 +1,5 @@
-import { messages, type Locale, type Messages } from "@reelmate/i18n";
-import { brand } from "@reelmate/config/brand";
+import { messages, type Locale, type Messages } from "@movieholix/i18n";
+import { brand } from "@movieholix/config/brand";
 import * as Localization from "expo-localization";
 
 export function resolveLocale(): Locale {

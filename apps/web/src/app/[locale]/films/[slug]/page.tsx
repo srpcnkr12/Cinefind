@@ -12,13 +12,13 @@ import {
   listSimilarFilms,
   listFilmsByPerson,
   getFilmCommunity,
-} from "@reelmate/api/films";
-import { tmdbImageUrl } from "@reelmate/core/domain/film";
+} from "@movieholix/api/films";
+import { tmdbImageUrl } from "@movieholix/core/domain/film";
 import {
   buildMovieJsonLd as buildMovie,
   buildBreadcrumbJsonLd as buildBreadcrumb,
-} from "@reelmate/core/seo/json-ld";
-import type { Locale } from "@reelmate/core/domain/film";
+} from "@movieholix/core/seo/json-ld";
+import type { Locale } from "@movieholix/core/domain/film";
 
 export const revalidate = 86400; // 1 gün (PRD 6.2)
 

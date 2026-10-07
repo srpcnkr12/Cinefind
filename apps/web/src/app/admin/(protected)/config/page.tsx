@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { listAppConfig, setAppConfig } from "@reelmate/api/admin";
+import { listAppConfig, setAppConfig } from "@movieholix/api/admin";
 import { createAdminServerClient } from "@/lib/supabase-server";
 
 export default async function AdminConfigPage() {

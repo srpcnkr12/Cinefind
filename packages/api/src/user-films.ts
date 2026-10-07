@@ -1,5 +1,5 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
-import type { Locale } from "@reelmate/core/domain/film";
+import type { Locale } from "@movieholix/core/domain/film";
 import {
   computeFilmStats,
   type DiaryVenue,
@@ -7,7 +7,7 @@ import {
   type StatsDiaryEntryRow,
   type StatsUserFilmRow,
   type UserFilmStatus,
-} from "@reelmate/core/domain/sinematek";
+} from "@movieholix/core/domain/sinematek";
 import type { FilmListItem } from "./films";
 
 /** `getFilmBySlug`/`searchFilms` ile aynı çeviri seçme deseni (bkz. films.ts). */

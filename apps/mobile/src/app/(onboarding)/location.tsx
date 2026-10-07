@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { TextInput, View } from "react-native";
 import * as Location from "expo-location";
-import { slugify } from "@reelmate/i18n";
-import { TR_CITY_CENTERS } from "@reelmate/core/domain/tr-cities";
+import { slugify } from "@movieholix/i18n";
+import { TR_CITY_CENTERS } from "@movieholix/core/domain/tr-cities";
 import { useMessages } from "@/lib/i18n";
 import { OnboardingLayout } from "@/components/onboarding-layout";
 import { ContinueButton } from "@/components/continue-button";

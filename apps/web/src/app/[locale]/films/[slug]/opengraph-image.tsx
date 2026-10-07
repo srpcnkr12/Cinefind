@@ -1,8 +1,8 @@
 import { ImageResponse } from "next/og";
 import { getSupabaseClient } from "@/lib/supabase";
-import { getFilmBySlug } from "@reelmate/api/films";
-import type { Locale } from "@reelmate/core/domain/film";
-import { brand } from "@reelmate/config/brand";
+import { getFilmBySlug } from "@movieholix/api/films";
+import type { Locale } from "@movieholix/core/domain/film";
+import { brand } from "@movieholix/config/brand";
 
 export const alt = brand.name;
 export const size = { width: 1200, height: 630 };

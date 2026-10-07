@@ -1,7 +1,7 @@
 // Kendi eslint.config.js/mjs dosyası olmayan paketler (packages/*) ve depo
 // kökündeki Node betikleri için düşen (fallback) kök config.
 // apps/web ve apps/mobile kendi eslint.config'lerinde bunu (base) genişletir.
-import { baseConfig } from "@reelmate/config/eslint";
+import { baseConfig } from "@movieholix/config/eslint";
 
 export default [
   ...baseConfig,

@@ -4,7 +4,7 @@ import { Redirect, type Href } from "expo-router";
 import { useSession } from "@/hooks/use-session";
 import { useProfile } from "@/hooks/use-profile";
 import { supabase } from "@/lib/supabase";
-import type { OnboardingStep } from "@reelmate/core/domain/profile";
+import type { OnboardingStep } from "@movieholix/core/domain/profile";
 
 const ONBOARDING_ROUTE: Record<Exclude<OnboardingStep, "completed">, string> = {
   birthdate: "/(onboarding)/birthdate",

@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "Reelmate",
-    "slug": "reelmate",
+    "name": "Movieholix",
+    "slug": "movieholix",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "reelmate",
+    "scheme": "movieholix",
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon",
-      "bundleIdentifier": "app.reelmate.mobile",
-      "associatedDomains": ["applinks:reelmate.app"]
+      "bundleIdentifier": "app.movieholix.mobile",
+      "associatedDomains": ["applinks:movieholix.app"]
     },
     "android": {
       "adaptiveIcon": {
@@ -20,12 +20,12 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "app.reelmate.mobile",
+      "package": "app.movieholix.mobile",
       "intentFilters": [
         {
           "autoVerify": true,
           "action": "VIEW",
-          "data": { "scheme": "https", "host": "reelmate.app" },
+          "data": { "scheme": "https", "host": "movieholix.app" },
           "category": ["BROWSABLE", "DEFAULT"]
         }
       ]

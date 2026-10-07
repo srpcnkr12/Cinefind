@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "Reelmate",
+    "appName": "Movieholix",
     "hello": "Find someone to talk to after the credits roll.",
     "fontSample": "A quiet café after the credits roll — coffee, popcorn, and one good film.",
     "continue": "Continue",
@@ -24,7 +24,7 @@
   "footer": {
     "tmdbAttribution": "This product uses the TMDB API but is not endorsed or certified by TMDB.",
     "rights": "All rights reserved.",
-    "copyright": "© {year} Reelmate. All rights reserved.",
+    "copyright": "© {year} Movieholix. All rights reserved.",
     "legalPrivacy": "Privacy Policy",
     "legalTerms": "Terms of Use",
     "legalKvkk": "KVKK Privacy Notice",
@@ -50,8 +50,8 @@
     "feature3Title": "A cinephile feed",
     "feature3Body": "Reviews, lists, discussions. Spoilers stay blurred, surprises stay safe.",
     "faqTitle": "Frequently asked questions",
-    "faqQ1": "What is Reelmate?",
-    "faqA1": "Reelmate is a cinema diary where you log the films you watch — and a way to meet people whose taste matches yours, starting your first conversation from a film you both love.",
+    "faqQ1": "What is Movieholix?",
+    "faqA1": "Movieholix is a cinema diary where you log the films you watch — and a way to meet people whose taste matches yours, starting your first conversation from a film you both love.",
     "faqQ2": "Is it free?",
     "faqA2": "Yes. Your film diary, the feed, and basic messaging are always free. We offer a premium subscription for unlimited swiping and extra features.",
     "faqQ3": "Who will I match with?",
@@ -69,8 +69,8 @@
     "googlePlay": "Get it on Google Play"
   },
   "filmDetail": {
-    "titleTemplate": "{title} ({year}) — Summary, Lines and Reviews | Reelmate",
-    "titleTemplateNoYear": "{title} — Summary, Lines and Reviews | Reelmate",
+    "titleTemplate": "{title} ({year}) — Summary, Lines and Reviews | Movieholix",
+    "titleTemplateNoYear": "{title} — Summary, Lines and Reviews | Movieholix",
     "breadcrumbHome": "Home",
     "breadcrumbFilms": "Films",
     "addToListCta": "Add to your list in the app",
@@ -104,14 +104,14 @@
     "subtitle": "Every film in our catalog."
   },
   "download": {
-    "title": "Download Reelmate",
+    "title": "Download Movieholix",
     "body": "We're redirecting you to the right store for your device. If nothing happened, use the links below.",
     "qrHint": "Scan with your phone to download."
   },
   "deleteAccount": {
     "title": "Delete your account",
-    "body": "You can delete your account from inside the Reelmate app: Profile → Settings → Account → Delete Account. After deletion, your data is handled according to our privacy policy.",
-    "contactHint": "No access to the app? Reach us at destek@reelmate.app."
+    "body": "You can delete your account from inside the Movieholix app: Profile → Settings → Account → Delete Account. After deletion, your data is handled according to our privacy policy.",
+    "contactHint": "No access to the app? Reach us at destek@movieholix.app."
   },
   "legal": {
     "pendingNotice": "This text is awaiting legal review and will be updated before launch.",
@@ -154,7 +154,7 @@
     "birthdateTitle": "What's your birthdate?",
     "birthdateBody": "This won't show on your profile — it's just for age verification.",
     "birthdatePlaceholder": "DD.MM.YYYY",
-    "underageTitle": "Sorry, Reelmate is for ages 18 and up.",
+    "underageTitle": "Sorry, Movieholix is for ages 18 and up.",
     "underageBody": "You can't create an account right now.",
     "basicsTitle": "Tell us about yourself",
     "namePlaceholder": "Your name",
@@ -406,7 +406,7 @@
     "superMessageFallback": "Sent you a super message"
   },
   "premium": {
-    "paywallTitle": "Reelmate Premium",
+    "paywallTitle": "Movieholix Premium",
     "paywallSubtitle": "Discover more through your film taste",
     "compareFreeHeader": "Free",
     "comparePremiumHeader": "Premium",
@@ -464,7 +464,7 @@
     "consentOn": "On",
     "consentOff": "Off",
     "consentReadOnlyNote": "The following were given at sign-up and can't be changed here.",
-    "exportDataBody": "You can generate a file containing everything Reelmate has stored about you (profile, Sinematek, posts, your messages, your matches).",
+    "exportDataBody": "You can generate a file containing everything Movieholix has stored about you (profile, Sinematek, posts, your messages, your matches).",
     "exportDataStatusPrefix": "Latest request status:",
     "exportDataRequestCta": "Start export",
     "exportDataDownloadCta": "Download file",

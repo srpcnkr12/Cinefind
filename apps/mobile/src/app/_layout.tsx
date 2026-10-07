@@ -16,7 +16,7 @@ import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import { trackEvent } from "@reelmate/core/domain/analytics";
+import { trackEvent } from "@movieholix/core/domain/analytics";
 import { AnalyticsProvider } from "@/lib/analytics";
 import { useTouchLastActive } from "@/lib/last-active";
 import { initSentry } from "@/lib/sentry";

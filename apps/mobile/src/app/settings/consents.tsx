@@ -8,7 +8,7 @@ import {
   revokeConsent,
   type Consent,
   type ConsentType,
-} from "@reelmate/api/compliance";
+} from "@movieholix/api/compliance";
 import { useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";
 

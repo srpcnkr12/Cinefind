@@ -1,4 +1,4 @@
-import { createReadOnlyClient } from "@reelmate/api/supabase-client";
+import { createReadOnlyClient } from "@movieholix/api/supabase-client";
 
 /** Sunucu bileşenlerinde kullanılan, yalnızca okuma amaçlı Supabase istemcisi. */
 export function getSupabaseClient() {

@@ -7,8 +7,8 @@ import {
   getPendingSuperMessages,
   type ConversationSummary,
   type PendingSuperMessage,
-} from "@reelmate/api/chat";
-import { respondToSuperMessage } from "@reelmate/api/monetization";
+} from "@movieholix/api/chat";
+import { respondToSuperMessage } from "@movieholix/api/monetization";
 import { useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";
 

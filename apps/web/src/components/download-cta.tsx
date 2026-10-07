@@ -1,7 +1,7 @@
 "use client";
 
 import { getDownloadUrl, type AttributionPosition } from "@/lib/attribution";
-import { trackEvent } from "@reelmate/core/domain/analytics";
+import { trackEvent } from "@movieholix/core/domain/analytics";
 
 type Props = {
   position: AttributionPosition;

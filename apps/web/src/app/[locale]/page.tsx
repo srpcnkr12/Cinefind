@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { DownloadCta } from "@/components/download-cta";
 import { buildAlternates } from "@/lib/seo";
-import { buildFaqJsonLd } from "@reelmate/core/seo/json-ld";
+import { buildFaqJsonLd } from "@movieholix/core/seo/json-ld";
 
 type Props = { params: Promise<{ locale: string }> };
 

@@ -2,8 +2,8 @@ import { Platform } from "react-native";
 import {
   CONSUMABLE_PRODUCTS,
   type ConsumableProductId,
-} from "@reelmate/core/domain/monetization";
-import { trackEvent } from "@reelmate/core/domain/analytics";
+} from "@movieholix/core/domain/monetization";
+import { trackEvent } from "@movieholix/core/domain/analytics";
 import { supabase } from "./supabase";
 
 /**

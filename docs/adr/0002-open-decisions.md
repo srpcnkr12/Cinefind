@@ -1,6 +1,6 @@
 # ADR 0002 — Açık Kararlar (PRD Bölüm 21) Çözümleri
 
-- Durum: Kabul edildi
+- Durum: Kabul edildi (madde 1, 2026-10-07'de ADR-0022 ile geçersiz kılındı)
 - Tarih: 2026-09-11
 
 PRD bölüm 21'deki 12 açık karar için kullanıcıya soruldu. 4 tanesi doğrudan onaylandı; kalanı PRD'deki varsayılanla ilerliyor (kullanıcı tarafından reddedilmedi). Her biri geri alınabilir ve ileride revize edilebilir.

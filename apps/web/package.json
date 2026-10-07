@@ -10,10 +10,10 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@reelmate/api": "workspace:*",
-    "@reelmate/config": "workspace:*",
-    "@reelmate/core": "workspace:*",
-    "@reelmate/i18n": "workspace:*",
+    "@movieholix/api": "workspace:*",
+    "@movieholix/config": "workspace:*",
+    "@movieholix/core": "workspace:*",
+    "@movieholix/i18n": "workspace:*",
     "@sentry/nextjs": "^10.74.0",
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.116.0",

@@ -3,8 +3,8 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getSupabaseClient } from "@/lib/supabase";
 import { buildAlternates } from "@/lib/seo";
-import { listCollections } from "@reelmate/api/films";
-import type { Locale } from "@reelmate/core/domain/film";
+import { listCollections } from "@movieholix/api/films";
+import type { Locale } from "@movieholix/core/domain/film";
 
 export const revalidate = 86400; // 1 gün (PRD 6.2)
 

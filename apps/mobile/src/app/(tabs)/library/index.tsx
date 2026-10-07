@@ -10,9 +10,9 @@ import {
   type DiaryEntryItem,
   type FilmLineItem,
   type LibraryEntry,
-} from "@reelmate/api/user-films";
-import { tmdbImageUrl, type Locale } from "@reelmate/core/domain/film";
-import type { FilmStats } from "@reelmate/core/domain/sinematek";
+} from "@movieholix/api/user-films";
+import { tmdbImageUrl, type Locale } from "@movieholix/core/domain/film";
+import type { FilmStats } from "@movieholix/core/domain/sinematek";
 import { resolveLocale, useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";
 

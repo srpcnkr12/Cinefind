@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { listTestimonials, upsertTestimonial } from "@reelmate/api/admin";
+import { listTestimonials, upsertTestimonial } from "@movieholix/api/admin";
 import { createAdminServerClient } from "@/lib/supabase-server";
 
 export default async function AdminTestimonialsPage() {

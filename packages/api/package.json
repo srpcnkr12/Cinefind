@@ -1,5 +1,5 @@
 {
-  "name": "@reelmate/api",
+  "name": "@movieholix/api",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -23,7 +23,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@reelmate/core": "workspace:*",
+    "@movieholix/core": "workspace:*",
     "@supabase/supabase-js": "2.116.0"
   },
   "devDependencies": {

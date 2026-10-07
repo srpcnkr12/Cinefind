@@ -17,11 +17,11 @@ import {
   unfollow,
   type PostItem,
   type PublicProfile,
-} from "@reelmate/api/social";
+} from "@movieholix/api/social";
 import {
   recordProfileView,
   sendSuperMessage,
-} from "@reelmate/api/monetization";
+} from "@movieholix/api/monetization";
 import { PostCard } from "@/components/post-card";
 import { useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";

@@ -7,7 +7,7 @@ import {
   tsRulesConfig,
   cjsOverrideConfig,
   reactVersionConfig,
-} from "@reelmate/config/eslint";
+} from "@movieholix/config/eslint";
 
 export default [
   ...expoConfig,

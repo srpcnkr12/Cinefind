@@ -3,7 +3,7 @@ import {
   listAdminCollections,
   setCollectionPublished,
   upsertCollectionTranslation,
-} from "@reelmate/api/admin";
+} from "@movieholix/api/admin";
 import { createAdminServerClient } from "@/lib/supabase-server";
 
 export default async function AdminCollectionsPage() {

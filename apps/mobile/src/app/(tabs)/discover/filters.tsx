@@ -2,7 +2,7 @@ import { useCallback, useState } from "react";
 import { Pressable, Text, TextInput, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { router, useFocusEffect } from "expo-router";
-import type { Intent } from "@reelmate/core/domain/profile";
+import type { Intent } from "@movieholix/core/domain/profile";
 import { ContinueButton } from "@/components/continue-button";
 import { useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";

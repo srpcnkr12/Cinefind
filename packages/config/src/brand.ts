@@ -1,12 +1,13 @@
 /**
  * Tek kaynak: uygulama genelinde marka adı/domain/mağaza linkleri buradan okunur.
- * Kalıcı ad netleşince (PRD bölüm 21, karar #1) sadece bu dosya değişir.
+ * Ad 2026-10-07'de Reelmate (placeholder) → Movieholix olarak kesinleşti;
+ * bkz. docs/adr/0022-brand-rename-movieholix.md.
  */
 export const brand = {
-  name: "Reelmate",
-  legalName: "Reelmate (placeholder)",
-  domain: "reelmate.app",
-  supportEmail: "destek@reelmate.app",
+  name: "Movieholix",
+  legalName: "Movieholix",
+  domain: "movieholix.app",
+  supportEmail: "destek@movieholix.app",
   defaultLocale: "tr",
   locales: ["tr", "en"] as const,
   appStoreUrl: "",

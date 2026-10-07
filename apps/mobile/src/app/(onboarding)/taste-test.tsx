@@ -5,13 +5,13 @@ import { OnboardingLayout } from "@/components/onboarding-layout";
 import { ContinueButton } from "@/components/continue-button";
 import { completeStep } from "@/lib/onboarding";
 import { supabase } from "@/lib/supabase";
-import { tmdbImageUrl } from "@reelmate/core/domain/film";
+import { tmdbImageUrl } from "@movieholix/core/domain/film";
 import type {
   TasteReaction,
   TasteReactionInput,
-} from "@reelmate/core/domain/profile";
-import { MIN_TASTE_REACTIONS } from "@reelmate/core/domain/profile";
-import { trackEvent } from "@reelmate/core/domain/analytics";
+} from "@movieholix/core/domain/profile";
+import { MIN_TASTE_REACTIONS } from "@movieholix/core/domain/profile";
+import { trackEvent } from "@movieholix/core/domain/analytics";
 
 type DeckFilm = { film_id: string; title: string; poster_path: string | null };
 

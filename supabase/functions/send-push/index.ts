@@ -66,7 +66,7 @@ export default {
       return Response.json({ sent: 0, reason: "no_device_tokens" });
     }
 
-    const title = senderProfile?.display_name ?? "Reelmate";
+    const title = senderProfile?.display_name ?? "Movieholix";
     const body =
       message?.kind === "text" ? (message.body ?? "Yeni mesaj") : "Yeni mesaj";
 

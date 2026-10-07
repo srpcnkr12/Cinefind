@@ -15,7 +15,7 @@ import {
   getComments,
   togglePostLike,
   type CommentItem,
-} from "@reelmate/api/social";
+} from "@movieholix/api/social";
 import { SpoilerBlur } from "@/components/spoiler-blur";
 import { useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";

@@ -12,7 +12,7 @@ export function GET() {
         relation: ["delegate_permission/common.handle_all_urls"],
         target: {
           namespace: "android_app",
-          package_name: "app.reelmate.mobile",
+          package_name: "app.movieholix.mobile",
           sha256_cert_fingerprints: [
             "TODO_REPLACE_WITH_REAL_SHA256_FINGERPRINT",
           ],

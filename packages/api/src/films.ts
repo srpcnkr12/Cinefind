@@ -1,5 +1,5 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
-import type { Locale } from "@reelmate/core/domain/film";
+import type { Locale } from "@movieholix/core/domain/film";
 
 export type FilmListItem = {
   id: string;

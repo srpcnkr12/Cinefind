@@ -5,10 +5,10 @@ import { OnboardingLayout } from "@/components/onboarding-layout";
 import { ContinueButton } from "@/components/continue-button";
 import { completeStep } from "@/lib/onboarding";
 import { supabase } from "@/lib/supabase";
-import { searchFilms, type SearchFilmResult } from "@reelmate/api/films";
-import { tmdbImageUrl } from "@reelmate/core/domain/film";
-import { TOP_FOUR_COUNT } from "@reelmate/core/domain/profile";
-import { trackEvent } from "@reelmate/core/domain/analytics";
+import { searchFilms, type SearchFilmResult } from "@movieholix/api/films";
+import { tmdbImageUrl } from "@movieholix/core/domain/film";
+import { TOP_FOUR_COUNT } from "@movieholix/core/domain/profile";
+import { trackEvent } from "@movieholix/core/domain/analytics";
 
 export default function TopFourScreen() {
   const t = useMessages().onboarding;

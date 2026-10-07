@@ -219,7 +219,7 @@ async function main() {
       filmPools[clusterIndex].length > 0
         ? filmPools[clusterIndex]
         : filmRows.map((f) => f.id);
-    const email = `${EMAIL_PREFIX}-${cluster.slug}-${i}@reelmate.demo`;
+    const email = `${EMAIL_PREFIX}-${cluster.slug}-${i}@movieholix.demo`;
 
     const { data: created, error: createError } =
       await admin.auth.admin.createUser({

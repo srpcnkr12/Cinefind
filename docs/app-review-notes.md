@@ -6,7 +6,7 @@ PRD 14.4, Faz 10. **Bu doküman bir hazırlık taslağıdır** — gerçek bir A
 
 `pnpm db:seed:demo` (bkz. `supabase/seed/demo-users.mjs`) yerel/staging ortamda 60 demo kullanıcı + 5 hazır eşleşme (aktif konuşmalı) oluşturur. İnceleme ekibine verilecek demo hesap:
 
-- E-posta deseni: `demo-<küme>-<n>@reelmate.demo` (ör. `demo-bilimkurgu-1@reelmate.demo`)
+- E-posta deseni: `demo-<küme>-<n>@movieholix.demo` (ör. `demo-bilimkurgu-1@movieholix.demo`)
 - Bu kullanıcılardan biri incelemeye özel bir hesap olarak seçilip gerçek bir şifre/magic-link ile erişilebilir hale getirilmeli (staging ortamında, seed script'i çalıştırdıktan sonra `supabase.auth.admin.generateLink` ile).
 - Demo hesabın profili dolu: görüntü adı, bio, 8 film (4'ü Kadraj'da), şehir, konum.
 - En az bir aktif eşleşme + konuşma zaten var (seed script'in oluşturduğu 5 çiftten biri).

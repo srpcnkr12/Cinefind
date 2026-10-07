@@ -6,10 +6,10 @@ import { router, useFocusEffect } from "expo-router";
 import {
   getMyProfileSummary,
   type MyProfileSummary,
-} from "@reelmate/api/profile";
-import { getMyFilmStats } from "@reelmate/api/user-films";
-import { tmdbImageUrl, type Locale } from "@reelmate/core/domain/film";
-import type { FilmStats } from "@reelmate/core/domain/sinematek";
+} from "@movieholix/api/profile";
+import { getMyFilmStats } from "@movieholix/api/user-films";
+import { tmdbImageUrl, type Locale } from "@movieholix/core/domain/film";
+import type { FilmStats } from "@movieholix/core/domain/sinematek";
 import { resolveLocale, useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";
 

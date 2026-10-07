@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getReportQueue } from "@reelmate/api/admin";
+import { getReportQueue } from "@movieholix/api/admin";
 import { createAdminServerClient } from "@/lib/supabase-server";
 
 export default async function AdminReportsPage() {

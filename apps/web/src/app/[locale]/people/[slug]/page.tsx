@@ -5,13 +5,13 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getSupabaseClient } from "@/lib/supabase";
 import { buildAlternates, absoluteUrl } from "@/lib/seo";
-import { getPersonBySlug } from "@reelmate/api/films";
-import { tmdbImageUrl } from "@reelmate/core/domain/film";
+import { getPersonBySlug } from "@movieholix/api/films";
+import { tmdbImageUrl } from "@movieholix/core/domain/film";
 import {
   buildPersonJsonLd,
   buildBreadcrumbJsonLd,
-} from "@reelmate/core/seo/json-ld";
-import type { Locale } from "@reelmate/core/domain/film";
+} from "@movieholix/core/seo/json-ld";
+import type { Locale } from "@movieholix/core/domain/film";
 
 export const revalidate = 86400; // 1 gün (PRD 6.2)
 
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const person = await getPersonBySlug(db, slug, locale as Locale);
   if (!person) return {};
   return {
-    title: `${person.name} | Reelmate`,
+    title: `${person.name} | Movieholix`,
     alternates: buildAlternates(locale, `/people/${slug}`),
   };
 }

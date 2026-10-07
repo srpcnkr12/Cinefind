@@ -2,10 +2,10 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import * as Crypto from "expo-crypto";
 import { useEffect } from "react";
 import { useNetworkState } from "expo-network";
-import { trackEvent } from "@reelmate/core/domain/analytics";
+import { trackEvent } from "@movieholix/core/domain/analytics";
 import { supabase } from "./supabase";
 
-const QUEUE_KEY = "reelmate.mutationQueue";
+const QUEUE_KEY = "movieholix.mutationQueue";
 
 export type QueuedMutationRpc =
   "upsert_user_film" | "add_diary_entry" | "add_film_line";

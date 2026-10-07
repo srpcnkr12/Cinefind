@@ -6,7 +6,7 @@ import {
   getBlockedUsers,
   unblockUser,
   type BlockedUser,
-} from "@reelmate/api/compliance";
+} from "@movieholix/api/compliance";
 import { useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";
 

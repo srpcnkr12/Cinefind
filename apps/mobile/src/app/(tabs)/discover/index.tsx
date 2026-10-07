@@ -7,9 +7,9 @@ import {
   swipe,
   type DiscoveryCandidate,
   type SwipeAction,
-} from "@reelmate/api/discovery";
-import { activateBoost } from "@reelmate/api/monetization";
-import { trackEvent } from "@reelmate/core/domain/analytics";
+} from "@movieholix/api/discovery";
+import { activateBoost } from "@movieholix/api/monetization";
+import { trackEvent } from "@movieholix/core/domain/analytics";
 import { DiscoveryCard } from "@/components/discovery-card";
 import { useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";

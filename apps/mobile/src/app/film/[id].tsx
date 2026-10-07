@@ -10,10 +10,10 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { router, useFocusEffect, useLocalSearchParams } from "expo-router";
-import { getFilmBySlug, type FilmDetail } from "@reelmate/api/films";
-import { getMyUserFilm } from "@reelmate/api/user-films";
-import { tmdbImageUrl, type Locale } from "@reelmate/core/domain/film";
-import type { DiaryVenue } from "@reelmate/core/domain/sinematek";
+import { getFilmBySlug, type FilmDetail } from "@movieholix/api/films";
+import { getMyUserFilm } from "@movieholix/api/user-films";
+import { tmdbImageUrl, type Locale } from "@movieholix/core/domain/film";
+import type { DiaryVenue } from "@movieholix/core/domain/sinematek";
 import { StarRating } from "@/components/star-rating";
 import { resolveLocale, useMessages } from "@/lib/i18n";
 import { callOrQueue } from "@/lib/mutation-queue";

@@ -2,7 +2,7 @@ import { useCallback, useState } from "react";
 import { Pressable, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { router, useFocusEffect } from "expo-router";
-import { getWeeklyStats, type WeeklyStats } from "@reelmate/api/monetization";
+import { getWeeklyStats, type WeeklyStats } from "@movieholix/api/monetization";
 import { useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";
 

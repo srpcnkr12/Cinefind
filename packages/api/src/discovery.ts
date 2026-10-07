@@ -1,6 +1,6 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
-import type { CompatibilityReason } from "@reelmate/core/domain/taste";
-import { trackEvent } from "@reelmate/core/domain/analytics";
+import type { CompatibilityReason } from "@movieholix/core/domain/taste";
+import { trackEvent } from "@movieholix/core/domain/analytics";
 
 export type DistanceBucket = "<1" | "1-5" | "5-10" | "10-25" | "25+";
 

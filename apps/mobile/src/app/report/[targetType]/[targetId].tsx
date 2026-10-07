@@ -6,7 +6,7 @@ import {
   blockUser,
   reportContent,
   type ReportReason,
-} from "@reelmate/api/discovery";
+} from "@movieholix/api/discovery";
 import { ContinueButton } from "@/components/continue-button";
 import { useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";

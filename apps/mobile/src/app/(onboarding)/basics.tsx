@@ -5,7 +5,7 @@ import { OnboardingLayout } from "@/components/onboarding-layout";
 import { ContinueButton } from "@/components/continue-button";
 import { completeStep } from "@/lib/onboarding";
 import { supabase } from "@/lib/supabase";
-import type { Gender } from "@reelmate/core/domain/profile";
+import type { Gender } from "@movieholix/core/domain/profile";
 
 const GENDERS: Gender[] = ["woman", "man", "nonbinary", "other"];
 

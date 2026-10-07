@@ -9,8 +9,8 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { router } from "expo-router";
-import { searchFilms, type SearchFilmResult } from "@reelmate/api/films";
-import { tmdbImageUrl } from "@reelmate/core/domain/film";
+import { searchFilms, type SearchFilmResult } from "@movieholix/api/films";
+import { tmdbImageUrl } from "@movieholix/core/domain/film";
 import { StarRating } from "@/components/star-rating";
 import { useMessages } from "@/lib/i18n";
 import { callOrQueue } from "@/lib/mutation-queue";

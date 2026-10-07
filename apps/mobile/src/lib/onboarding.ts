@@ -1,7 +1,7 @@
 import { router } from "expo-router";
 import { supabase } from "@/lib/supabase";
-import type { OnboardingStep } from "@reelmate/core/domain/profile";
-import { trackEvent } from "@reelmate/core/domain/analytics";
+import type { OnboardingStep } from "@movieholix/core/domain/profile";
+import { trackEvent } from "@movieholix/core/domain/analytics";
 
 /**
  * Bir onboarding adımı tamamlandığında çağrılır: `profiles.onboarding_step`'i

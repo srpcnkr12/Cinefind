@@ -1,5 +1,5 @@
 import { routing } from "@/i18n/routing";
-import { brand } from "@reelmate/config/brand";
+import { brand } from "@movieholix/config/brand";
 
 export function getSiteUrl(): string {
   return process.env.NEXT_PUBLIC_SITE_URL ?? `https://${brand.domain}`;

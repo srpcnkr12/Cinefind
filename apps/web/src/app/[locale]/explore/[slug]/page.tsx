@@ -5,13 +5,13 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getSupabaseClient } from "@/lib/supabase";
 import { buildAlternates, absoluteUrl } from "@/lib/seo";
-import { getCollectionBySlug } from "@reelmate/api/films";
-import { tmdbImageUrl } from "@reelmate/core/domain/film";
+import { getCollectionBySlug } from "@movieholix/api/films";
+import { tmdbImageUrl } from "@movieholix/core/domain/film";
 import {
   buildItemListJsonLd,
   buildBreadcrumbJsonLd,
-} from "@reelmate/core/seo/json-ld";
-import type { Locale } from "@reelmate/core/domain/film";
+} from "@movieholix/core/seo/json-ld";
+import type { Locale } from "@movieholix/core/domain/film";
 
 export const revalidate = 86400; // 1 gün (PRD 6.2)
 
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const collection = await getCollectionBySlug(db, slug, locale as Locale);
   if (!collection) return {};
   return {
-    title: `${collection.title} | Reelmate`,
+    title: `${collection.title} | Movieholix`,
     description: collection.intro ?? undefined,
     alternates: buildAlternates(locale, `/explore/${slug}`),
   };

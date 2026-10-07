@@ -11,7 +11,7 @@ export function GET() {
       applinks: {
         details: [
           {
-            appIDs: ["TEAMID.app.reelmate.mobile"],
+            appIDs: ["TEAMID.app.movieholix.mobile"],
             components: [
               { "/": "/film/*", comment: "Film detay sayfaları" },
               { "/": "/user/*", comment: "Kullanıcı profil sayfaları" },

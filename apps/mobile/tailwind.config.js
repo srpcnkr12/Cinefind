@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   presets: [
     require("nativewind/preset"),
-    require("@reelmate/tokens/tailwind-preset.cjs"),
+    require("@movieholix/tokens/tailwind-preset.cjs"),
   ],
   theme: {
     extend: {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
-import type { OnboardingStep } from "@reelmate/core/domain/profile";
+import type { OnboardingStep } from "@movieholix/core/domain/profile";
 
 export type ProfileRow = {
   id: string;

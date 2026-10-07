@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { getUser360, moderateUser } from "@reelmate/api/admin";
+import { getUser360, moderateUser } from "@movieholix/api/admin";
 import { createAdminServerClient } from "@/lib/supabase-server";
 
 type Props = { params: Promise<{ id: string }> };

@@ -1,5 +1,5 @@
 import { defineRouting } from "next-intl/routing";
-import { brand } from "@reelmate/config/brand";
+import { brand } from "@movieholix/config/brand";
 
 export const routing = defineRouting({
   locales: [...brand.locales],

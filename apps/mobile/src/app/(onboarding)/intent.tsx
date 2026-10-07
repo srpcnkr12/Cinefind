@@ -5,7 +5,7 @@ import { OnboardingLayout } from "@/components/onboarding-layout";
 import { ContinueButton } from "@/components/continue-button";
 import { completeStep } from "@/lib/onboarding";
 import { supabase } from "@/lib/supabase";
-import type { Intent } from "@reelmate/core/domain/profile";
+import type { Intent } from "@movieholix/core/domain/profile";
 
 const INTENTS: Intent[] = ["dating", "friendship", "watch_buddy"];
 

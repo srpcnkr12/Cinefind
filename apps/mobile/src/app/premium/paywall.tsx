@@ -3,7 +3,7 @@ import { Alert, Pressable, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { router, useLocalSearchParams } from "expo-router";
 import { createPurchasesProvider, type PurchasePackage } from "@/lib/purchases";
-import { trackEvent } from "@reelmate/core/domain/analytics";
+import { trackEvent } from "@movieholix/core/domain/analytics";
 import { useMessages } from "@/lib/i18n";
 
 const purchases = createPurchasesProvider();

@@ -4,9 +4,9 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getSupabaseClient } from "@/lib/supabase";
 import { buildAlternates } from "@/lib/seo";
-import { listFilms } from "@reelmate/api/films";
-import { tmdbImageUrl } from "@reelmate/core/domain/film";
-import type { Locale } from "@reelmate/core/domain/film";
+import { listFilms } from "@movieholix/api/films";
+import { tmdbImageUrl } from "@movieholix/core/domain/film";
+import type { Locale } from "@movieholix/core/domain/film";
 
 export const revalidate = 21600; // 6 saat (PRD 6.2)
 

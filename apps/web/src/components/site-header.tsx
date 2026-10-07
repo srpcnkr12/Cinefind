@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { brand } from "@reelmate/config/brand";
+import { brand } from "@movieholix/config/brand";
 
 export async function SiteHeader() {
   const t = await getTranslations("nav");

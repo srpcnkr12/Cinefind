@@ -2,7 +2,7 @@
 # https://supabase.com/docs/guides/local-development/cli/config
 # A string used to distinguish different Supabase projects on the same host. Defaults to the
 # working directory name when running `supabase init`.
-project_id = "reelmate"
+project_id = "movieholix"
 
 [api]
 enabled = true
@@ -250,7 +250,7 @@ otp_expiry = 3600
 # E-posta OTP kodu bu şablon üzerinden gönderilir ({{ .Token }} olmadan Supabase
 # link tabanlı "magic link" gönderir, mobil uygulama 6 haneli kod bekliyor).
 [auth.email.template.magic_link]
-subject = "Reelmate giriş kodun"
+subject = "Movieholix giriş kodun"
 content_path = "./supabase/templates/magic_link.html"
 
 # Uncomment to customize notification email template

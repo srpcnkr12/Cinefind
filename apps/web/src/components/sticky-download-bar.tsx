@@ -3,7 +3,7 @@
 import { useSyncExternalStore } from "react";
 import { getDownloadUrl } from "@/lib/attribution";
 
-const COOKIE_NAME = "reelmate-hide-sticky-bar";
+const COOKIE_NAME = "movieholix-hide-sticky-bar";
 const listeners = new Set<() => void>();
 
 function hasDismissCookie(): boolean {

@@ -5,7 +5,7 @@
 
 ## Karar
 
-`apps/web/src/app/.well-known/apple-app-site-association/route.ts` ve `.../assetlinks.json/route.ts` doğru `Content-Type` ile serve ediliyor, ama içerikleri yer tutucu: Apple Team ID (`TEAMID.app.reelmate.mobile`) ve Android SHA256 imza parmak izi (`TODO_REPLACE_WITH_REAL_SHA256_FINGERPRINT`) gerçek değil. `apps/mobile/app.json`'a eklenen `ios.associatedDomains`/`android.intentFilters` de aynı yer tutucu domain'i kullanıyor.
+`apps/web/src/app/.well-known/apple-app-site-association/route.ts` ve `.../assetlinks.json/route.ts` doğru `Content-Type` ile serve ediliyor, ama içerikleri yer tutucu: Apple Team ID (`TEAMID.app.movieholix.mobile`) ve Android SHA256 imza parmak izi (`TODO_REPLACE_WITH_REAL_SHA256_FINGERPRINT`) gerçek değil. `apps/mobile/app.json`'a eklenen `ios.associatedDomains`/`android.intentFilters` de aynı yer tutucu domain'i kullanıyor.
 
 ## Gerekçe
 

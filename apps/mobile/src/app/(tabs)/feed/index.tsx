@@ -8,7 +8,7 @@ import {
   togglePostLike,
   toggleBookmark,
   type PostItem,
-} from "@reelmate/api/social";
+} from "@movieholix/api/social";
 import { PostCard } from "@/components/post-card";
 import { useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";

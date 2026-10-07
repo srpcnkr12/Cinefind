@@ -4,7 +4,7 @@ import {
   resolveReport,
   moderateUser,
   removeContent,
-} from "@reelmate/api/admin";
+} from "@movieholix/api/admin";
 import { createAdminServerClient } from "@/lib/supabase-server";
 
 type Props = { params: Promise<{ id: string }> };

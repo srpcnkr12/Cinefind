@@ -4,8 +4,8 @@ import type {
   NotificationType,
   PostType,
   PostVisibility,
-} from "@reelmate/core/domain/social";
-import { trackEvent } from "@reelmate/core/domain/analytics";
+} from "@movieholix/core/domain/social";
+import { trackEvent } from "@movieholix/core/domain/analytics";
 
 export type PostItem = {
   id: string;

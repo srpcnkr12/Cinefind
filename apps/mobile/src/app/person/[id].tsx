@@ -9,8 +9,8 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { router, useFocusEffect, useLocalSearchParams } from "expo-router";
-import { getPersonBySlug, type PersonDetail } from "@reelmate/api/films";
-import { tmdbImageUrl, type Locale } from "@reelmate/core/domain/film";
+import { getPersonBySlug, type PersonDetail } from "@movieholix/api/films";
+import { tmdbImageUrl, type Locale } from "@movieholix/core/domain/film";
 import { resolveLocale, useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";
 

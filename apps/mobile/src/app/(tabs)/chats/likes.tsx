@@ -5,7 +5,7 @@ import { router, useFocusEffect } from "expo-router";
 import {
   getLikesReceived,
   type LikesReceivedResult,
-} from "@reelmate/api/discovery";
+} from "@movieholix/api/discovery";
 import { useMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";
 

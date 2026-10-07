@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "Reelmate",
+    "appName": "Movieholix",
     "hello": "Jenerikten sonra da konuşacak birini bul.",
     "fontSample": "İyi bir öğleden sonra: Işıklı çayını içip şöyle güzel bir şey konuşalım, üşürsen kazak giy.",
     "continue": "Devam et",
@@ -24,7 +24,7 @@
   "footer": {
     "tmdbAttribution": "Bu ürün TMDB API'sini kullanır ancak TMDB tarafından onaylanmış veya sertifikalandırılmamıştır.",
     "rights": "Tüm hakları saklıdır.",
-    "copyright": "© {year} Reelmate. Tüm hakları saklıdır.",
+    "copyright": "© {year} Movieholix. Tüm hakları saklıdır.",
     "legalPrivacy": "Gizlilik Politikası",
     "legalTerms": "Kullanım Şartları",
     "legalKvkk": "KVKK Aydınlatma Metni",
@@ -50,8 +50,8 @@
     "feature3Title": "Sinefil akışı",
     "feature3Body": "İncelemeler, listeler, tartışmalar. Spoiler'lar bulanık, sürprizler güvende.",
     "faqTitle": "Sıkça sorulan sorular",
-    "faqQ1": "Reelmate nedir?",
-    "faqA1": "Reelmate, izlediğin filmleri kaydettiğin bir sinema günlüğü; film zevki seninkiyle örtüşen insanlarla tanışmanı ve ilk sohbeti ortak bir filmden başlatmanı sağlayan bir uygulama.",
+    "faqQ1": "Movieholix nedir?",
+    "faqA1": "Movieholix, izlediğin filmleri kaydettiğin bir sinema günlüğü; film zevki seninkiyle örtüşen insanlarla tanışmanı ve ilk sohbeti ortak bir filmden başlatmanı sağlayan bir uygulama.",
     "faqQ2": "Ücretsiz mi?",
     "faqA2": "Evet. Sinematek (film günlüğün), akış ve temel sohbet her zaman ücretsizdir. Sınırsız kaydırma ve bazı ekstra özellikler için premium abonelik sunuyoruz.",
     "faqQ3": "Kimlerle eşleşirim?",
@@ -69,8 +69,8 @@
     "googlePlay": "Google Play'de indir"
   },
   "filmDetail": {
-    "titleTemplate": "{title} ({year}) — Özet, Replikler ve Yorumlar | Reelmate",
-    "titleTemplateNoYear": "{title} — Özet, Replikler ve Yorumlar | Reelmate",
+    "titleTemplate": "{title} ({year}) — Özet, Replikler ve Yorumlar | Movieholix",
+    "titleTemplateNoYear": "{title} — Özet, Replikler ve Yorumlar | Movieholix",
     "breadcrumbHome": "Ana sayfa",
     "breadcrumbFilms": "Filmler",
     "addToListCta": "Uygulamada listene ekle",
@@ -104,14 +104,14 @@
     "subtitle": "Kataloğumuzdaki tüm filmler."
   },
   "download": {
-    "title": "Reelmate'i indir",
+    "title": "Movieholix'i indir",
     "body": "Cihazına göre doğru mağazaya yönlendiriliyorsun. Yönlendirilmediysen aşağıdaki bağlantıları kullan.",
     "qrHint": "Telefonunla taratarak indir."
   },
   "deleteAccount": {
     "title": "Hesabını sil",
-    "body": "Hesabını Reelmate uygulaması içinden silebilirsin: Profil → Ayarlar → Hesap → Hesabı Sil. Hesabını sildikten sonra verilerin KVKK/GDPR politikamıza uygun şekilde işlenir.",
-    "contactHint": "Uygulamaya erişimin yoksa destek@reelmate.app adresinden bize ulaş."
+    "body": "Hesabını Movieholix uygulaması içinden silebilirsin: Profil → Ayarlar → Hesap → Hesabı Sil. Hesabını sildikten sonra verilerin KVKK/GDPR politikamıza uygun şekilde işlenir.",
+    "contactHint": "Uygulamaya erişimin yoksa destek@movieholix.app adresinden bize ulaş."
   },
   "legal": {
     "pendingNotice": "Bu metin hukuki inceleme bekliyor; lansmandan önce güncellenecektir.",
@@ -154,7 +154,7 @@
     "birthdateTitle": "Doğum tarihin ne?",
     "birthdateBody": "Bu bilgi profilinde görünmez, yaş kontrolü için kullanılır.",
     "birthdatePlaceholder": "GG.AA.YYYY",
-    "underageTitle": "Üzgünüz, Reelmate 18 yaş ve üzeri içindir.",
+    "underageTitle": "Üzgünüz, Movieholix 18 yaş ve üzeri içindir.",
     "underageBody": "Şu an için hesap oluşturamıyorsun.",
     "basicsTitle": "Kendinden bahset",
     "namePlaceholder": "Adın",
@@ -406,7 +406,7 @@
     "superMessageFallback": "Sana süper mesaj gönderdi"
   },
   "premium": {
-    "paywallTitle": "Reelmate Premium",
+    "paywallTitle": "Movieholix Premium",
     "paywallSubtitle": "Film zevkinle daha fazlasını keşfet",
     "compareFreeHeader": "Ücretsiz",
     "comparePremiumHeader": "Premium",
@@ -464,7 +464,7 @@
     "consentOn": "Açık",
     "consentOff": "Kapalı",
     "consentReadOnlyNote": "Aşağıdakiler kayıt sırasında verildi, buradan değiştirilemez.",
-    "exportDataBody": "Reelmate'te kayıtlı tüm verilerini (profil, Sinematek, gönderiler, mesajların, eşleşmelerin) içeren bir dosya oluşturabilirsin.",
+    "exportDataBody": "Movieholix'te kayıtlı tüm verilerini (profil, Sinematek, gönderiler, mesajların, eşleşmelerin) içeren bir dosya oluşturabilirsin.",
     "exportDataStatusPrefix": "Son istek durumu:",
     "exportDataRequestCta": "Dışa aktarmayı başlat",
     "exportDataDownloadCta": "Dosyayı indir",

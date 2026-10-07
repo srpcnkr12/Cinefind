@@ -1,4 +1,4 @@
-# CLAUDE.md — Reelmate
+# CLAUDE.md — Movieholix
 
 ## Proje
 

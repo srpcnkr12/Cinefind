@@ -17,12 +17,12 @@ import {
   subscribeToMessages,
   unmatch,
   type ChatMessage,
-} from "@reelmate/api/chat";
+} from "@movieholix/api/chat";
 import {
   generateIcebreakers,
   type IcebreakerSuggestion,
-} from "@reelmate/core/domain/icebreaker";
-import type { CompatibilityReason } from "@reelmate/core/domain/taste";
+} from "@movieholix/core/domain/icebreaker";
+import type { CompatibilityReason } from "@movieholix/core/domain/taste";
 import { useMessages as useI18nMessages } from "@/lib/i18n";
 import { supabase } from "@/lib/supabase";
 

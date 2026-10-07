@@ -1,7 +1,7 @@
 import { Image, Pressable, Text, View } from "react-native";
 import { router } from "expo-router";
-import type { PostItem } from "@reelmate/api/social";
-import { tmdbImageUrl } from "@reelmate/core/domain/film";
+import type { PostItem } from "@movieholix/api/social";
+import { tmdbImageUrl } from "@movieholix/core/domain/film";
 import { SpoilerBlur } from "@/components/spoiler-blur";
 import { useMessages } from "@/lib/i18n";
 
