@@ -520,3 +520,24 @@ export async function getFilmCommunity(
     ratingCount: (stats as { rating_count: number } | null)?.rating_count ?? 0,
   };
 }
+
+/**
+ * Verilen id'ler için film listesi öğelerini döndürür (ortak izleme listesi gibi
+ * yalnızca film id'si tutan yüzeyler için). Sıra korunmaz — çağıran taraf kendi
+ * sırasını uygulamalı.
+ */
+export async function listFilmsByIds(
+  db: SupabaseClient,
+  locale: Locale,
+  ids: readonly string[],
+): Promise<FilmListItem[]> {
+  if (ids.length === 0) return [];
+  const { data, error } = await db
+    .from("films")
+    .select(FILM_LIST_SELECT)
+    .in("id", ids as string[]);
+  if (error) throw new Error(`listFilmsByIds failed: ${error.message}`);
+  return ((data ?? []) as unknown as FilmListRow[]).map((row) =>
+    mapFilmListRow(row, locale),
+  );
+}

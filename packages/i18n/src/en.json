@@ -405,6 +405,17 @@
     "superMessageDelete": "Delete",
     "superMessageFallback": "Sent you a super message"
   },
+  "sharedWatchlist": {
+    "title": "Shared list",
+    "subtitle": "Films you both want to watch.",
+    "empty": "The list is empty. Search for a film below and add it.",
+    "addedByYou": "Added by you",
+    "searchPlaceholder": "Search films",
+    "add": "Add",
+    "added": "Added",
+    "openChat": "Shared list",
+    "addError": "Couldn't add the film. Try again."
+  },
   "premium": {
     "paywallTitle": "Movieholix Premium",
     "paywallSubtitle": "Discover more through your film taste",

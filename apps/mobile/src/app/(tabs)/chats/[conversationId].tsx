@@ -36,6 +36,7 @@ export default function ConversationScreen() {
   const { conversationId } = useLocalSearchParams<{ conversationId: string }>();
   const t = useI18nMessages().chats;
   const tCommon = useI18nMessages().common;
+  const tShared = useI18nMessages().sharedWatchlist;
   const [myUserId, setMyUserId] = useState<string | null>(null);
   const [context, setContext] = useState<ConversationContext | null>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -191,6 +192,16 @@ export default function ConversationScreen() {
           </Text>
         </View>
         <View className="flex-row gap-4">
+          <Pressable
+            accessibilityRole="button"
+            onPress={() =>
+              context && router.push(`/shared-watchlist/${context.matchId}`)
+            }
+          >
+            <Text className="font-body text-t12 text-reel">
+              {tShared.openChat}
+            </Text>
+          </Pressable>
           <Pressable
             accessibilityRole="button"
             onPress={() =>

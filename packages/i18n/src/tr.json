@@ -405,6 +405,17 @@
     "superMessageDelete": "Sil",
     "superMessageFallback": "Sana süper mesaj gönderdi"
   },
+  "sharedWatchlist": {
+    "title": "Ortak liste",
+    "subtitle": "İkinizin de izlemek istediği filmler.",
+    "empty": "Liste henüz boş. Aşağıdan bir film ara ve ekle.",
+    "addedByYou": "Sen ekledin",
+    "searchPlaceholder": "Film ara",
+    "add": "Ekle",
+    "added": "Eklendi",
+    "openChat": "Ortak liste",
+    "addError": "Film eklenemedi. Tekrar dene."
+  },
   "premium": {
     "paywallTitle": "Movieholix Premium",
     "paywallSubtitle": "Film zevkinle daha fazlasını keşfet",
