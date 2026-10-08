@@ -125,6 +125,30 @@ export default {
       collectionLinks = refreshed;
     }
 
+    // Katalog değiştiyse web'in ISR sayfalarını tazele (PRD 10.2 revalidate-web).
+    // Yapılandırılmamışsa (web henüz dağıtılmadı) sessizce atlanır.
+    let revalidated = false;
+    if (filmsUpserted > 0) {
+      const target = Deno.env.get("WEB_REVALIDATE_URL");
+      const secret = Deno.env.get("REVALIDATE_SECRET");
+      if (target && secret) {
+        try {
+          const res = await fetch(target, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "x-revalidate-secret": secret,
+            },
+            body: JSON.stringify({ entity: "catalog" }),
+          });
+          revalidated = res.ok;
+        } catch {
+          // Senkronun kendisi başarılı; tazeleme hatası işi düşürmemeli.
+          revalidated = false;
+        }
+      }
+    }
+
     return Response.json({
       provider: provider.name,
       candidatesScanned: seen.size,
@@ -132,6 +156,7 @@ export default {
       filmsSkippedFresh,
       collectionsSeeded,
       collectionLinks,
+      revalidated,
     });
   }),
 };

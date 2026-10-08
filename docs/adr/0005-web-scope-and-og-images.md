@@ -20,4 +20,10 @@ Bu öğelerin hiçbiri Faz 2'nin ölçülebilir kabul kriterini etkilemiyor; ger
 
 ## Sonuç
 
-Öğe 2 (blog) ve 6 (logo) editoryal/varlık teslimi bekliyor. Öğe 4 (on-demand revalidation) Faz 9/10 planında ele alınacak.
+Öğe 2 (blog) ve 6 (logo) editoryal/varlık teslimi bekliyor.
+
+**Güncelleme (2026-10-08):** Öğe 4 (on-demand revalidation) Faz 9/10'a
+ertelenmişti ama o fazlarda yapılmadı — PRD 10.2'nin `revalidate-web`
+fonksiyonu ve `.env.example`'daki `REVALIDATE_SECRET` kodda hiçbir
+karşılığı olmadan duruyordu. Artık yapıldı: `apps/web/src/app/api/revalidate`
+rotası + `supabase/functions/revalidate-web` + `tmdb-sync` bağlantısı.

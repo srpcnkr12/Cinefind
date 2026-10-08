@@ -1,6 +1,6 @@
 # ADR 0008 — Premium Kapılı Özellikler Faz 5'te Sabit Değer Döner
 
-- Durum: Kabul edildi
+- Durum: Çözüldü (Faz 8'de uygulandı, 2026-10-08'de doğrulandı)
 - Tarih: 2026-09-14
 
 ## Karar
@@ -18,3 +18,10 @@ Sahte bir `is_premium` kolonu icat edip Faz 8'de gerçek `entitlements` tablosuy
 ## Sonuç
 
 Faz 8 planı, `undo_last_swipe`/`get_likes_received` gövdelerini `entitlements` tablosuna karşı gerçek bir kontrolle değiştirecek; istemci tarafı (RPC adı/dönüş tipi) değişmeyecek.
+
+## Güncelleme (2026-10-08)
+
+Faz 8 bunu yaptı: `undo_last_swipe`, `get_likes_received`, `swipe` ve
+`get_weekly_stats` artık `entitlements` tablosunu okuyan `is_premium()`
+yardımcısını çağırıyor. Sabit kontrol kalmadı; ADR'nin öngördüğü gibi
+istemci tarafı (RPC adı/dönüş tipi) değişmedi.
