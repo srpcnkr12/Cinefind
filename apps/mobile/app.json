@@ -8,7 +8,6 @@
     "scheme": "movieholix",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon",
       "bundleIdentifier": "app.movieholix.mobile",
       "associatedDomains": ["applinks:movieholix.app"]
     },
@@ -25,7 +24,10 @@
         {
           "autoVerify": true,
           "action": "VIEW",
-          "data": { "scheme": "https", "host": "movieholix.app" },
+          "data": {
+            "scheme": "https",
+            "host": "movieholix.app"
+          },
           "category": ["BROWSABLE", "DEFAULT"]
         }
       ]
