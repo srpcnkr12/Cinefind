@@ -76,6 +76,17 @@ jobs:
       - name: Run pgTAP / RLS tests
         run: supabase test db
 
+      # E2E testleri film/koleksiyon listelerinden gezinerek çalışıyor; boş
+      # katalogda anlamsızlar. PRD 18.1'in öngördüğü gibi fixture sağlayıcıyla
+      # dolduruluyor (gerçek TMDB anahtarı CI'da yok ve olmamalı).
+      - name: Seed catalog (fixture)
+        run: |
+          eval "$(supabase status -o env | grep -E '^[A-Z0-9_]+=' | sed 's/^/export /')"
+          : "${API_URL:?supabase status API_URL döndürmedi}"
+          : "${SECRET_KEY:?supabase status SECRET_KEY döndürmedi}"
+          curl -fsS -X POST "$API_URL/functions/v1/tmdb-sync" \
+            -H "apikey: $SECRET_KEY" | tee /dev/stderr | grep -q '"provider":"fixture"'
+
       - name: Build web
         run: |
           # `status -o env` çıktısında "Stopped services: [...]" gibi bilgi
@@ -86,3 +97,22 @@ jobs:
           NEXT_PUBLIC_SUPABASE_URL="$API_URL" \
           NEXT_PUBLIC_SUPABASE_ANON_KEY="$ANON_KEY" \
             pnpm --filter web build
+
+      - name: Install Playwright browser
+        run: pnpm --filter web exec playwright install chromium --with-deps
+
+      # Playwright kendi webServer'ında yeniden derliyor (CTA'ların mağaza
+      # URL'leri NEXT_PUBLIC_* olduğu için derleme anında gömülmek zorunda).
+      - name: Web E2E (Playwright)
+        run: |
+          eval "$(supabase status -o env | grep -E '^[A-Z0-9_]+=' | sed 's/^/export /')"
+          NEXT_PUBLIC_SUPABASE_URL="$API_URL" \
+          NEXT_PUBLIC_SUPABASE_ANON_KEY="$ANON_KEY" \
+            pnpm e2e:web
+
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: apps/web/playwright-report/
+          retention-days: 7
